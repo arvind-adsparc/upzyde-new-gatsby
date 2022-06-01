@@ -4,8 +4,11 @@ import "./footer.scss";
 const Footer = () => {
   return (
     <footer className="footer-section">
-      footer section
-      <div className="copyright-section"></div>
+      <div className="newsletter-section"></div>
+      <div className="quick-links"></div>
+      <div className="copyright-section inner-container">
+        <div>2022 © Copyright. All rights reserved. Privacy Policy</div>
+      </div>
     </footer>
   );
 };

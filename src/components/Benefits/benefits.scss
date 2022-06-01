@@ -7,13 +7,20 @@
   h2 {
     font-size: $sectionTitle;
     text-transform: uppercase;
+    margin-bottom: $margin2x;
   }
 
-  .content {
-    width: 70%;
-    margin: $margin2x auto;
+  h3 {
+    font-size: $sectionSubTitle;
+    margin: $margin2x 0;
+    color: $primary;
   }
 
+  .content-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    gap: 2rem;
+  }
   .cta {
     margin-top: $margin1halfx;
     text-align: center;

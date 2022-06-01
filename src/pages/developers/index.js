@@ -5,10 +5,12 @@ import OtherPageOverview from "../../components/Overview/OtherPageOverview/other
 import Partners from "../../components/Partners/partners";
 import Works from "../../components/Works/works";
 import Benefits from "../../components/Benefits/benefits";
+import DeveloperHero from "../../components/Hero/developerHero";
 
 const Developers = () => {
   return (
     <Layout>
+      <DeveloperHero />
       <OtherPageOverview {...overviewData} />
       <Works />
       <Benefits {...benefitsData} />

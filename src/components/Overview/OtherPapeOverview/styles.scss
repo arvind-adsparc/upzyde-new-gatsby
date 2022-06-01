@@ -4,4 +4,13 @@
   padding: $sectionSpacing 0;
   background-color: $neutralBlack;
   color: $neutralWhite;
+
+  .section-content {
+    width: 70%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 28px;
+    font-size: $sectionPara;
+  }
 }

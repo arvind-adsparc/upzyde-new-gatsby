@@ -1,10 +1,15 @@
 import React from "react";
 import "./styles.scss";
 
-const OtherPageOverview = () => {
+const OtherPageOverview = ({ content, cta }) => {
   return (
     <section className="overview-containerOther">
-      <div className="inner-container">Content goes here</div>
+      <div className="inner-container">
+        <div
+          className="section-content"
+          dangerouslySetInnerHTML={{ __html: content }}
+        />
+      </div>
     </section>
   );
 };

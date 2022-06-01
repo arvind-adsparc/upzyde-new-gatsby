@@ -1,0 +1,26 @@
+@import "../../styles//variables.scss";
+
+.benefits-container {
+  padding: $sectionSpacing 0;
+  text-align: center;
+
+  h2 {
+    font-size: $sectionTitle;
+    text-transform: uppercase;
+  }
+
+  .content {
+    width: 70%;
+    margin: $margin2x auto;
+  }
+
+  .cta {
+    margin-top: $margin1halfx;
+    text-align: center;
+
+    button {
+      background-color: $primaryRed;
+      color: $neutralWhite;
+    }
+  }
+}

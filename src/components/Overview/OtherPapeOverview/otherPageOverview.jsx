@@ -9,6 +9,10 @@ const OtherPageOverview = ({ content, cta }) => {
           className="section-content"
           dangerouslySetInnerHTML={{ __html: content }}
         />
+
+        <div className="cta">
+          <button className="btn">{cta.text}</button>
+        </div>
       </div>
     </section>
   );

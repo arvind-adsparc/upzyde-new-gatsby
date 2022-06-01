@@ -4,4 +4,16 @@
   padding: $sectionSpacing 0;
   background-color: $neutralBlack;
   color: $neutralWhite;
+  text-align: center;
+
+  h2 {
+    font-size: $sectionTitle;
+    text-transform: uppercase;
+    margin-bottom: $margin2x;
+  }
+
+  .content {
+    width: 70%;
+    margin: $margin2x auto;
+  }
 }

@@ -4,16 +4,15 @@
   background-color: rgba($color: $neutralBlack, $alpha: 0.85);
   padding: 1.5rem 1rem;
   color: $neutralWhite;
+  font-family: $primaryType;
   position: fixed;
-  top: 0;
   width: 80%;
+  top: 0;
   left: 0;
   right: 0;
   margin: 0 auto;
-  padding: 1rem 0;
-  font-family: $primaryType;
   z-index: 10;
-  box-shadow: 0px 4px 11px -2px rgb(0 0 0 / 25%);
+  //   box-shadow: 0px 4px 11px -2px rgb(0 0 0 / 25%);
 
   .flex-container {
     display: flex;
@@ -29,5 +28,16 @@
     width: 55%;
     font-size: 0.8rem;
     font-weight: $medium;
+
+    .link {
+      cursor: pointer;
+      padding: 0.3rem 0.7rem;
+
+      &:hover {
+        background-color: $primaryRed;
+
+        border-radius: 20px;
+      }
+    }
   }
 }

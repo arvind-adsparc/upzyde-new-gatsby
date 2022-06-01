@@ -18,8 +18,35 @@
 
   .content-container {
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+
+    gap: 1rem;
+
+    .card {
+      border: 1px solid black;
+      color: $neutralWhite;
+      background-color: $primary;
+      text-align: center;
+
+      .card-title {
+        background-color: $gradientOne;
+        font-size: 0.8rem;
+        font-weight: $bold;
+        padding: 0.7rem 0;
+        text-transform: uppercase;
+      }
+
+      .card-txt {
+        font-size: $cardPara;
+        padding: 0.7rem;
+        font-size: 0.8rem;
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        line-height: 20px;
+      }
+    }
   }
   .cta {
     margin-top: $margin1halfx;

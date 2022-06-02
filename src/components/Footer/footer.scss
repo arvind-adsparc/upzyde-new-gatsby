@@ -2,19 +2,39 @@
 
 .footer-section {
   //   for testing
-  height: 40rem;
+  height: 50rem;
   /////
 
   background-image: url(https://res.cloudinary.com/dqove2qhg/image/upload/v1654064857/Upzyde/footer-1_g1ldpe.webp);
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 100% 40rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  background-size: 100% 50rem;
+  // background-size: cover;
+
+  .grid-container {
+    display: grid;
+
+    grid-template-rows: repeat(10, 1fr);
+    height: 100%;
+  }
+
+  .newsletter-section {
+    grid-row: 6;
+    background-color: $neutralWhite;
+    padding: 2rem;
+  }
+
+  .quick-links {
+    grid-row: 8;
+  }
+
+  .logo {
+    width: 8rem;
+  }
 
   .copyright-section {
-    justify-self: flex-end;
+    // justify-self: flex-end;
+    grid-row: 10;
     background-color: $primary;
     color: $neutralWhite;
     font-weight: $medium;

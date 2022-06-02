@@ -1,6 +1,8 @@
 import React from "react";
-import { Form, Input, Button, Checkbox } from "antd";
+import { Form, Input, Button, Select } from "antd";
 import "./styles.scss";
+
+const { Option } = Select;
 
 const RequestDemoForm = () => {
   const onFinish = (values) => {
@@ -10,6 +12,8 @@ const RequestDemoForm = () => {
   const onFinishFailed = (errorInfo) => {
     console.log("Failed:", errorInfo);
   };
+
+  const selectChange = () => {};
   return (
     <section className="rqDemo-container">
       <div className="inner-container">
@@ -44,6 +48,7 @@ const RequestDemoForm = () => {
               name="email"
               rules={[
                 {
+                  type: "email",
                   required: true,
                   message: "Please input your email!",
                 },
@@ -51,18 +56,13 @@ const RequestDemoForm = () => {
             >
               <Input placeholder="Email" />
             </Form.Item>
-            <Form.Item
-              name="last-name"
-              rules={[
-                {
-                  required: true,
-                  message: "Please input your last name!",
-                },
-              ]}
-            >
-              <Input placeholder="Last Name" />
-            </Form.Item>
           </div>
+
+          <Form.Item>
+            <div className="cta">
+              <button className="btn">Request Demo</button>
+            </div>
+          </Form.Item>
         </Form>
       </div>
     </section>

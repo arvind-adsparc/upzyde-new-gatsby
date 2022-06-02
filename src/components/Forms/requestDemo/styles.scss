@@ -12,4 +12,13 @@
   input {
     margin: $margin1x 0;
   }
+
+  .cta {
+    margin: $margin2x 0;
+    text-align: center;
+    button {
+      background-color: $primaryRed;
+      color: $neutralWhite;
+    }
+  }
 }

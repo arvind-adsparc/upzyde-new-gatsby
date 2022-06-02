@@ -16,33 +16,26 @@ export const partnersdata = {
 
 export const benefitsData = {
   backgroundImage:
-    "https://res.cloudinary.com/dqove2qhg/image/upload/v1654083824/Upzyde/benfits_bg-1_rtp3sw.webp",
+    "https://res.cloudinary.com/dqove2qhg/image/upload/v1654174058/Upzyde/bg-benfits_1_bgvm1e.webp",
   heading: "Benefits for App Developers",
   subHeading: "Why Choose Upzyde?",
+  columns: "two-columns",
   content: [
     {
-      title: "Effective Rendering",
-      text: "Dynamic rendering function for perfectly matched ad formats into the gaming environment",
+      title: "Cross-device Connectivity",
+      text: "From novice mobile gamers to staunch VR lovers, Upzyde connects you to a vast array of audiences across multiple geo-locations",
     },
     {
-      title: "Creative Control",
-      text: "Enhanced inventory management related to data, content, ad formats, pricing, and more",
+      title: "Premium Inventory",
+      text: "Go global with Upzyde. Access to the best audiences from Tier 1 and 2 publishers, covering multi-facet gaming genres",
+    },
+    {
+      title: "Highly Transparent",
+      text: "Unified metrics. Get detailed campaign analytics involving granular reporting and tracking",
     },
     {
       title: "Easy Integration",
-      text: "One simple to use drag-n-drop integration across several platforms",
-    },
-    {
-      title: "Accurate Reporting",
-      text: "Real-time reporting, tracking, & audits for better optimization",
-    },
-    {
-      title: "Premium Partnering",
-      text: "Get partnered with top-tier agencies & advertisers",
-    },
-    {
-      title: "Unity Verified",
-      text: "Our in-game ad solution is Unity verified so it’s trustworthy on a global scale",
+      text: "Innovative targeting for programmatic campaigns by connecting leading SSPs,  DSPs, Mediation and Trading Platforms",
     },
   ],
   cta: {

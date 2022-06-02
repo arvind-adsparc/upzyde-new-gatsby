@@ -22,9 +22,7 @@
 
   .content-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 1fr;
-
     gap: 1rem;
 
     .card {
@@ -46,11 +44,23 @@
         padding: 0.7rem;
         font-size: 0.8rem;
         display: flex;
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
         line-height: 20px;
       }
     }
+  }
+
+  .two-columns {
+    grid-template-columns: repeat(2, 1fr);
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .three-columns {
+    grid-template-columns: repeat(3, 1fr);
+    width: 75%;
+    margin: 0 auto;
   }
   .cta {
     margin-top: $margin2x;

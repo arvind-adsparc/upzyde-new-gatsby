@@ -2,7 +2,14 @@ import React from "react";
 import Lazyload from "react-lazyload";
 import "./benefits.scss";
 
-const Benefits = ({ heading, subHeading, content, backgroundImage, cta }) => {
+const Benefits = ({
+  heading,
+  subHeading,
+  columns,
+  content,
+  backgroundImage,
+  cta,
+}) => {
   return (
     <Lazyload once>
       <section
@@ -14,7 +21,7 @@ const Benefits = ({ heading, subHeading, content, backgroundImage, cta }) => {
           <h2>{heading}</h2>
           <h3>{subHeading}</h3>
 
-          <div className="content-container ">
+          <div className={`content-container ${columns}`}>
             {content.map((info) => {
               return (
                 <div key={info.title} className="card">

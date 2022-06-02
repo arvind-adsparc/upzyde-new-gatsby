@@ -13,6 +13,7 @@ export const benefitsData = {
     "https://res.cloudinary.com/dqove2qhg/image/upload/v1654083824/Upzyde/benfits_bg-1_rtp3sw.webp",
   heading: "Benefits for App Developers",
   subHeading: "Why Choose Upzyde?",
+  columns: "three-columns",
   content: [
     {
       title: "Effective Rendering",

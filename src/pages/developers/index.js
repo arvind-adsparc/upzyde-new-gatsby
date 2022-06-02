@@ -9,7 +9,7 @@ import OtherPageOverview from "../../components/Overview/OtherPageOverview/other
 import Partners from "../../components/Partners/partners";
 import Works from "../../components/Works/works";
 import Benefits from "../../components/Benefits/benefits";
-import DeveloperHero from "../../components/Hero/developerHero";
+import DeveloperHero from "../../components/Hero/developer";
 import Formats from "../../components/Formats/formats";
 import RequestDemoForm from "../../components/Forms/requestDemo";
 

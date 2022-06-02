@@ -1,5 +1,6 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
+import { Link } from "gatsby";
 import "./header.scss";
 
 const Header = ({ active }) => {
@@ -19,11 +20,19 @@ const Header = ({ active }) => {
         <div className="divider"></div>
 
         <nav className="nav-links flex-container">
-          <div className="link">Home</div>
-          <div className="link">Developers</div>
-          <div className="link">Advertisers</div>
+          <div className="link">
+            <Link to="/">Home</Link>
+          </div>
+          <div className="link">
+            <Link to="/developers">Developers</Link>
+          </div>
+          <div className="link">
+            <Link to="/advertisers">Advertisers</Link>
+          </div>
           <div className="link">In Game Ads</div>
-          <div className="link">Contact Us</div>
+          <div className="link">
+            <Link to="/contact-us">Contact Us</Link>
+          </div>
         </nav>
       </div>
     </header>

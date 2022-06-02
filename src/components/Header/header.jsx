@@ -1,6 +1,7 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
+import headerData from "./data";
 import "./header.scss";
 
 const Header = ({ activeID }) => {
@@ -20,32 +21,15 @@ const Header = ({ activeID }) => {
         <div className="divider"></div>
 
         <nav className="nav-links flex-container">
-          <Link
-            to="/"
-            className={`link ${activeID === "homepage" ? "active" : ""}`}
-          >
-            Home
-          </Link>
-
-          <Link
-            className={`link ${activeID === "developers" ? "active" : ""}`}
-            to="/developers"
-          >
-            Developers
-          </Link>
-          <Link
-            to="/advertisers"
-            className={`link ${activeID === "advertisers" ? "active" : ""}`}
-          >
-            Advertisers
-          </Link>
-          <div className="link">In Game Ads</div>
-          <Link
-            to="/contact-us"
-            className={`link ${activeID === "contact" ? "active" : ""}`}
-          >
-            Contact Us
-          </Link>
+          {headerData.map((info) => (
+            <Link
+              key={info.id}
+              to={info.to}
+              className={`link ${activeID === info.id ? "active" : ""}`}
+            >
+              {info.text}
+            </Link>
+          ))}
         </nav>
       </div>
     </header>

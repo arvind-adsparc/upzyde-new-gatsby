@@ -2,7 +2,7 @@ import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import "./header.scss";
 
-const Header = () => {
+const Header = ({ active }) => {
   return (
     <header className="page-header">
       <div className="inner-container flex-container">

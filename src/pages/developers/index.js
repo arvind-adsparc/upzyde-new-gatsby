@@ -10,7 +10,7 @@ import DeveloperHero from "../../components/Hero/developerHero";
 const Developers = () => {
   return (
     <Layout>
-      <DeveloperHero />
+      <DeveloperHero active="developers" />
       <OtherPageOverview {...overviewData} />
       <Works />
       <Benefits {...benefitsData} />

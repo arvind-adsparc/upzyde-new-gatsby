@@ -1,0 +1,33 @@
+@import "../../styles/variables.scss";
+
+.formats-container {
+  padding: $sectionSpacing 0;
+  background-image: url(https://res.cloudinary.com/dqove2qhg/image/upload/v1654148784/Upzyde/ad_format_1_sc2zew.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $neutralWhite;
+
+  h2 {
+    font-size: $sectionTitle;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: $margin2x;
+  }
+
+  .content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .content-txt {
+    width: 55%;
+  }
+
+  .content-images {
+    width: 40%;
+    display: flex;
+    align-items: center;
+  }
+}

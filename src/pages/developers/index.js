@@ -6,6 +6,7 @@ import Partners from "../../components/Partners/partners";
 import Works from "../../components/Works/works";
 import Benefits from "../../components/Benefits/benefits";
 import DeveloperHero from "../../components/Hero/developerHero";
+import Formats from "../../components/Formats/formats";
 
 const Developers = () => {
   return (
@@ -14,6 +15,7 @@ const Developers = () => {
       <OtherPageOverview {...overviewData} />
       <Works />
       <Benefits {...benefitsData} />
+      <Formats />
       <Partners {...partnersdata} />
     </Layout>
   );

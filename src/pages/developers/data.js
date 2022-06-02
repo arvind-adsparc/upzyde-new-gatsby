@@ -50,3 +50,9 @@ export const benefitsData = {
     link: "",
   },
 };
+
+// export const formatsData = {
+//   backgroundImage:
+//     "https://res.cloudinary.com/dqove2qhg/image/upload/v1654148784/Upzyde/ad_format_1_sc2zew.webp",
+//   heading: "AD FORMATS",
+// };

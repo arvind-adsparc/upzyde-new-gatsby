@@ -2,25 +2,30 @@
 
 .developer-hero {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
 
   .hero-image {
     text-align: center;
+    grid-column: 1 / span 12;
+    grid-row: 1 / span 12;
   }
 
   .content {
-    position: absolute;
-    top: 35%;
-    right: 20%;
+    // position: absolute;
+    // top: 35%;
+    // right: 20%;
     color: $neutralWhite;
     text-transform: uppercase;
 
+    grid-column: 8 / 12;
+    grid-row: 5 / span 8;
+    z-index: 2;
+
     h2 {
       margin: $margin1x 0;
-      font-size: $heroTitle;
-      //   background-color: $primaryRed;
+      font-size: 1.5rem;
       background-image: linear-gradient(to right, $primaryRed, #bd310a);
 
       padding: 0.7rem;

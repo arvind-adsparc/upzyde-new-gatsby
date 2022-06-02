@@ -21,11 +21,16 @@
   }
 
   .logo {
-    width: 8rem;
+    width: 10%;
+  }
+
+  .divider {
+    width: 25%;
   }
 
   .nav-links {
-    width: 55%;
+    // width: 55%;
+    flex: 1;
     font-size: 0.8rem;
     font-weight: $medium;
 

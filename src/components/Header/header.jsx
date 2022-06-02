@@ -16,6 +16,8 @@ const Header = ({ active }) => {
           />
         </div>
 
+        <div className="divider"></div>
+
         <nav className="nav-links flex-container">
           <div className="link">Home</div>
           <div className="link">Developers</div>

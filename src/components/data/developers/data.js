@@ -8,12 +8,6 @@ export const overviewData = {
   },
 };
 
-export const partnersdata = {
-  heading: "Trusted Partners",
-  brandLogos:
-    "https://res.cloudinary.com/dqove2qhg/image/upload/v1654076189/Upzyde/brand_logos_-img-1_miri5w.webp",
-};
-
 export const benefitsData = {
   backgroundImage:
     "https://res.cloudinary.com/dqove2qhg/image/upload/v1654083824/Upzyde/benfits_bg-1_rtp3sw.webp",

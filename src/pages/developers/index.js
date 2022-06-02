@@ -2,7 +2,6 @@ import React from "react";
 import {
   overviewData,
   benefitsData,
-  partnersdata,
 } from "../../components/data/developers/data";
 import Layout from "../../components/Layout/layout";
 import OtherPageOverview from "../../components/Overview/OtherPageOverview/otherPageOverview";
@@ -21,7 +20,7 @@ const Developers = () => {
       <Works />
       <Benefits {...benefitsData} />
       <Formats />
-      <Partners {...partnersdata} />
+      <Partners />
       <RequestDemoForm />
     </Layout>
   );

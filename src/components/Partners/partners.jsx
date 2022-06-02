@@ -2,10 +2,10 @@ import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import "./partners.scss";
 
-const Partners = ({ heading, brandLogos }) => {
+const Partners = () => {
   return (
     <section className="partners-container">
-      <h2>{heading}</h2>
+      <h2>Trusted Partners</h2>
 
       <div className="content">
         <StaticImage

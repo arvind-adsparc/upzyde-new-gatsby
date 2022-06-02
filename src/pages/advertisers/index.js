@@ -4,6 +4,7 @@ import Layout from "../../components/Layout/layout";
 import AdvertisersHero from "../../components/Hero/advertisers";
 import OtherPageOverview from "../../components/Overview/OtherPageOverview/otherPageOverview";
 import Works from "../../components/Works/works";
+import Partners from "../../components/Partners/partners";
 
 const Advertisers = () => {
   return (
@@ -11,6 +12,7 @@ const Advertisers = () => {
       <AdvertisersHero />
       <OtherPageOverview {...overviewData} />
       <Works />
+      <Partners />
     </Layout>
   );
 };

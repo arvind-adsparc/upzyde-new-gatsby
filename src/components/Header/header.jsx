@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 import headerData from "./data";
 import "./header.scss";
 
 const Header = ({ activeID }) => {
+  const [openMobNav, setOpenMobNav] = useState(false);
+
   return (
     <header className="page-header">
       <div className="inner-container flex-container">
@@ -20,7 +22,31 @@ const Header = ({ activeID }) => {
 
         <div className="divider"></div>
 
-        <nav className="nav-links flex-container">
+        <div
+          onClick={() => setOpenMobNav(!openMobNav)}
+          className="mobile-nav"
+          aria-hidden="true"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+
+          {openMobNav && (
+            <nav className="mobile-nav-links">
+              {headerData.map((info) => (
+                <Link
+                  key={info.id}
+                  to={info.to}
+                  className={`link ${activeID === info.id ? "active" : ""}`}
+                >
+                  {info.text}
+                </Link>
+              ))}
+            </nav>
+          )}
+        </div>
+
+        <nav className="nav-links desktop-nav  flex-container">
           {headerData.map((info) => (
             <Link
               key={info.id}

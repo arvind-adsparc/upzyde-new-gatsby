@@ -22,10 +22,45 @@
     grid-row: 6;
     background-color: $neutralWhite;
     padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+
+    h3 {
+      font-size: 0.8rem;
+      font-weight: $medium;
+      margin-bottom: $marginhalfx;
+    }
+
+    .color-red {
+      color: $primaryRed;
+      width: 1rem;
+    }
+
+    .border-red {
+      background-color: $primaryRed;
+      width: 2rem;
+      height: 0.15rem;
+      margin-bottom: $margin1x;
+    }
+
+    .content {
+      display: flex;
+      align-items: center;
+    }
+
+    .mail-txt {
+      font-size: $default;
+    }
+
+    .social-link {
+      cursor: pointer;
+    }
   }
 
   .quick-links {
     grid-row: 8;
+    padding: 2rem;
   }
 
   .logo {

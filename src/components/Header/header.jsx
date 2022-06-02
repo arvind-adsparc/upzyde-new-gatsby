@@ -20,19 +20,20 @@ const Header = ({ active }) => {
         <div className="divider"></div>
 
         <nav className="nav-links flex-container">
-          <div className="link">
-            <Link to="/">Home</Link>
-          </div>
-          <div className="link">
-            <Link to="/developers">Developers</Link>
-          </div>
-          <div className="link">
-            <Link to="/advertisers">Advertisers</Link>
-          </div>
+          <Link to="/" className="link">
+            Home
+          </Link>
+
+          <Link to="/developers" className="link">
+            Developers
+          </Link>
+          <Link to="/advertisers" className="link">
+            Advertisers
+          </Link>
           <div className="link">In Game Ads</div>
-          <div className="link">
-            <Link to="/contact-us">Contact Us</Link>
-          </div>
+          <Link to="/contact-us" className="link">
+            Contact Us
+          </Link>
         </nav>
       </div>
     </header>

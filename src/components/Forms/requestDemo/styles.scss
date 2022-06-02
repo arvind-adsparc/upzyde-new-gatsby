@@ -2,4 +2,14 @@
 
 .rqDemo-container {
   padding: $sectionSpacing 0;
+
+  .formItem-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  input {
+    margin: $margin1x 0;
+  }
 }

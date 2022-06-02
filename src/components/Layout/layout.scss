@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+@import "../../styles//variables.scss";
 
 .container {
   max-width: 1320px;
@@ -11,6 +12,27 @@
   width: 90%;
   margin: 0 auto;
 }
+
+// form defaults
+
+input {
+  border: 2px solid $neutralGray;
+  width: 100%;
+  padding: 0.4rem 0.8rem;
+  outline: none;
+  border-radius: 20px;
+}
+.ant-form-item {
+  width: 100%;
+}
+
+.ant-form-item-explain-error {
+  color: $primaryRed;
+  font-size: 0.8rem;
+  margin: $margin1x 0;
+}
+
+// btn defaults
 
 .btn {
   padding: 0.7rem 1.5rem;

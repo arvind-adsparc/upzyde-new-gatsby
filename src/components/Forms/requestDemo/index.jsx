@@ -1,8 +1,8 @@
 import React from "react";
-import { Form, Input, Button, Select } from "antd";
+import { Form, Input } from "antd";
 import "./styles.scss";
 
-const { Option } = Select;
+// const { Option } = Select;
 
 const RequestDemoForm = () => {
   const onFinish = (values) => {
@@ -13,7 +13,7 @@ const RequestDemoForm = () => {
     console.log("Failed:", errorInfo);
   };
 
-  const selectChange = () => {};
+  // const selectChange = () => {};
   return (
     <section className="rqDemo-container">
       <div className="inner-container">

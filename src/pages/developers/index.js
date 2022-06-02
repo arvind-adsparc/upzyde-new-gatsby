@@ -11,10 +11,16 @@ import Benefits from "../../components/Benefits/benefits";
 import DeveloperHero from "../../components/Hero/developer";
 import Formats from "../../components/Formats/formats";
 import RequestDemoForm from "../../components/Forms/requestDemo";
+import Seo from "../../components/Seo/seo";
 
 const Developers = () => {
   return (
     <Layout page="developers">
+      <Seo
+        url="https://res.cloudinary.com/dqove2qhg/image/upload/v1654087901/Upzyde/Banner_image_1_bshcup.webp"
+        title=" Develoeprs | Upzyde"
+        description="Use Upzyde’s advanced tech to maximize revenue with in-app bidding. Our innovative ad monetization features safeguard your brand, improve UX, and serve you with maximum return on inventory."
+      />
       <DeveloperHero active="developers" />
       <OtherPageOverview {...overviewData} />
       <Works />

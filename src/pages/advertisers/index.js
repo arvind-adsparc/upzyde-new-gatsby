@@ -10,10 +10,16 @@ import Works from "../../components/Works/works";
 import Partners from "../../components/Partners/partners";
 import RequestDemoForm from "../../components/Forms/requestDemo";
 import Benefits from "../../components/Benefits/benefits";
+import Seo from "../../components/Seo/seo";
 
 const Advertisers = () => {
   return (
     <Layout page="advertisers">
+      <Seo
+        url="https://res.cloudinary.com/dqove2qhg/image/upload/v1654172465/Upzyde/banner_image_1_nzglwu.webp"
+        title="Advertisers | Upzyde"
+        description="Explore the S.M.A.R.T ways to connect to your audience via native ad placements blended intelligently into gameplay. Experience a cohesive advertising campaign across multiple in-game & in-stream ad formats (display/video/audio)."
+      />
       <AdvertisersHero />
       <OtherPageOverview {...overviewData} />
       <Works />

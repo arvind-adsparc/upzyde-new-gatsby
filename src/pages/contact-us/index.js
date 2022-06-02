@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../../components/Layout/layout";
 
 const ContactUs = () => {
-  return <Layout>Contact US</Layout>;
+  return <Layout page="contact">Contact US</Layout>;
 };
 
 export default ContactUs;

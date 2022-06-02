@@ -44,5 +44,10 @@
         border-radius: 20px;
       }
     }
+
+    .active {
+      background-color: $primaryRed;
+      border-radius: 20px;
+    }
   }
 }

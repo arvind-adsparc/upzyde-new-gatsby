@@ -15,7 +15,7 @@ import RequestDemoForm from "../../components/Forms/requestDemo";
 
 const Developers = () => {
   return (
-    <Layout>
+    <Layout page="developers">
       <DeveloperHero active="developers" />
       <OtherPageOverview {...overviewData} />
       <Works />

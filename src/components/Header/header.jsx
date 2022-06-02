@@ -3,7 +3,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 import "./header.scss";
 
-const Header = ({ active }) => {
+const Header = ({ activeID }) => {
   return (
     <header className="page-header">
       <div className="inner-container flex-container">
@@ -20,18 +20,30 @@ const Header = ({ active }) => {
         <div className="divider"></div>
 
         <nav className="nav-links flex-container">
-          <Link to="/" className="link">
+          <Link
+            to="/"
+            className={`link ${activeID === "homepage" ? "active" : ""}`}
+          >
             Home
           </Link>
 
-          <Link to="/developers" className="link">
+          <Link
+            className={`link ${activeID === "developers" ? "active" : ""}`}
+            to="/developers"
+          >
             Developers
           </Link>
-          <Link to="/advertisers" className="link">
+          <Link
+            to="/advertisers"
+            className={`link ${activeID === "advertisers" ? "active" : ""}`}
+          >
             Advertisers
           </Link>
           <div className="link">In Game Ads</div>
-          <Link to="/contact-us" className="link">
+          <Link
+            to="/contact-us"
+            className={`link ${activeID === "contact" ? "active" : ""}`}
+          >
             Contact Us
           </Link>
         </nav>

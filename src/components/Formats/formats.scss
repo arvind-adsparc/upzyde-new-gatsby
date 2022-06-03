@@ -15,6 +15,31 @@
     margin-bottom: $margin2x;
   }
 
+  .slider-container {
+    width: 450px;
+    margin: 2rem auto;
+    .slider {
+      height: 15rem;
+    }
+
+    .ant-carousel-vertical {
+      .slick-dots-right {
+        right: 0;
+      }
+
+      .slick-dots {
+        li {
+          height: 10px;
+          button {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+
   .content-container {
     display: flex;
     justify-content: space-between;

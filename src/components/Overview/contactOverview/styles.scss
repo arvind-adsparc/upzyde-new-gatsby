@@ -1,0 +1,12 @@
+@import "../../../styles/variables.scss";
+
+.contact-overview {
+  padding: $sectionSpacing 0;
+
+  display: flex;
+  justify-content: space-between;
+
+  h2 {
+    font-size: $sectionTitle;
+  }
+}

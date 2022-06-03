@@ -13,6 +13,11 @@ const ConactOverview = () => {
 
       <div className="location">
         <h2>Location</h2>
+
+        <div className="txt">
+          <p>Fonteinlaan 5a, 2012 JT Haarlem,</p>
+          <p>The Netherlands</p>
+        </div>
       </div>
     </section>
   );

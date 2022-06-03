@@ -6,8 +6,29 @@
   display: flex;
   justify-content: space-between;
 
+  @media only screen and (max-width: $mobile) {
+    flex-direction: column;
+  }
+
   .form {
     width: 60%;
+    @media only screen and (max-width: $mobile) {
+      width: 80%;
+      margin: $margin1x auto;
+    }
+  }
+
+  .location {
+    .txt {
+      margin: $margin1x 0;
+      line-height: 10px;
+      font-weight: $medium;
+      font-size: $default;
+    }
+    @media only screen and (max-width: $mobile) {
+      width: 80%;
+      margin: $margin1x auto;
+    }
   }
 
   h2 {

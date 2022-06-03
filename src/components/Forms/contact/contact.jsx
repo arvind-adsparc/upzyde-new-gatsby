@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Input } from "antd";
+import { Form, Input, Radio } from "antd";
 import "./styles.scss";
 
 const ContactForm = () => {
@@ -68,6 +68,28 @@ const ContactForm = () => {
             <Input />
           </Form.Item>
         </div>
+
+        <Form.Item
+          name="company-type"
+          label="Company Type"
+          rules={[
+            {
+              required: true,
+              message: "Please input select a companty type!",
+            },
+          ]}
+        >
+          <Radio.Group>
+            <div className="radio-group">
+              <Radio value="advertiser">Advertiser</Radio>
+              <Radio value="dsp/ssp">DSP/SSP</Radio>
+              <Radio value="game-developer">Game Developer</Radio>
+              <Radio value="game-publisher">Game Publisher</Radio>
+              <Radio value="metaverse-enthusiast">Metaverse Enthusiast</Radio>
+              <Radio value="other">Other</Radio>
+            </div>
+          </Radio.Group>
+        </Form.Item>
 
         <Form.Item
           name="message"

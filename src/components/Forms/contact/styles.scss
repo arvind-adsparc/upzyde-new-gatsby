@@ -11,6 +11,11 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
+
+  .radio-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .ant-row {
     display: block;
   }

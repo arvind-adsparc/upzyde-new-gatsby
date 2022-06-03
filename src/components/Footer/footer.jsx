@@ -19,7 +19,7 @@ const Footer = () => {
           </div>
 
           <div className="form">
-            <h3 className="color-red">Newsletter</h3>
+            <h3 className="color-red">Subscribe to Newsletter</h3>
           </div>
 
           <div className="follow-us">

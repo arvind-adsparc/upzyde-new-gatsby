@@ -6,6 +6,13 @@ import "./footer.scss";
 const Footer = () => {
   return (
     <footer className="footer-section">
+      <div className="footer-image">
+        <StaticImage
+          src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654064857/Upzyde/footer-1_g1ldpe.webp"
+          alt=""
+          placeholder="none"
+        />
+      </div>
       <div className="inner-container grid-container">
         <div className="newsletter-section">
           <div className="mail-us">

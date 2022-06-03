@@ -11,6 +11,7 @@ import Partners from "../../components/Partners/partners";
 import RequestDemoForm from "../../components/Forms/requestDemo";
 import Benefits from "../../components/Benefits/benefits";
 import Seo from "../../components/Seo/seo";
+import Formats from "../../components/Formats/formats";
 
 const Advertisers = () => {
   return (
@@ -24,6 +25,7 @@ const Advertisers = () => {
       <OtherPageOverview {...overviewData} />
       <Works />
       <Benefits {...benefitsData} />
+      <Formats />
       <Partners />
       <RequestDemoForm />
     </Layout>

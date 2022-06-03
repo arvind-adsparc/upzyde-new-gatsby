@@ -14,7 +14,8 @@
 
 // form defaults
 
-input {
+input,
+.ant-input {
   border: 2px solid $neutralGray;
   width: 100%;
   padding: 0.4rem 0.8rem;

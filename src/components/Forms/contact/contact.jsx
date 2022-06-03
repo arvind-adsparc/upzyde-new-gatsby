@@ -12,7 +12,82 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="contactForm-container">Form content goes here</section>
+    <section className="contactForm-container">
+      <Form name="" onFinish={onFinish} onFinishFailed={onFinishFailed}>
+        <div className="form-group">
+          <Form.Item
+            name="first-name"
+            label="First Name"
+            rules={[
+              {
+                required: true,
+                message: "Please input your first name!",
+              },
+            ]}
+          >
+            <Input />
+          </Form.Item>
+
+          <Form.Item
+            name="last-name"
+            label="Last Name"
+            rules={[
+              {
+                required: true,
+                message: "Please input your last name!",
+              },
+            ]}
+          >
+            <Input />
+          </Form.Item>
+        </div>
+        <div className="form-group">
+          <Form.Item
+            name="comp-name"
+            label="Company Name"
+            rules={[
+              {
+                required: true,
+                message: "Please input your company name!",
+              },
+            ]}
+          >
+            <Input />
+          </Form.Item>
+
+          <Form.Item
+            name="email"
+            label="Email"
+            rules={[
+              {
+                required: true,
+                message: "Please input your email!",
+              },
+            ]}
+          >
+            <Input />
+          </Form.Item>
+        </div>
+
+        <Form.Item
+          name="message"
+          label="Message"
+          rules={[
+            {
+              required: false,
+            },
+          ]}
+        >
+          <Input.TextArea rows={4} showCount maxLength={200} />
+        </Form.Item>
+
+        <Form.Item>
+          <div className="cta">
+            <button className="btn">Send</button>
+          </div>
+        </Form.Item>
+      </Form>
+    </section>
   );
 };
 

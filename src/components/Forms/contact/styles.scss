@@ -2,4 +2,42 @@
 
 .contactForm-container {
   background-color: $neutralGray;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+
+  .form-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .ant-row {
+    display: block;
+  }
+
+  label {
+    display: block;
+  }
+
+  textarea {
+    resize: none;
+    border-radius: 5px;
+  }
+
+  input {
+    border: inherit;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .cta {
+    color: $neutralWhite;
+    margin: $margin1x 0;
+
+    .btn {
+      width: 25%;
+      background-color: $primaryRed;
+      border-radius: 5px;
+    }
+  }
 }

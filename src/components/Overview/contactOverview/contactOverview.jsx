@@ -1,4 +1,5 @@
 import React from "react";
+import ContactForm from "../../Forms/contact/contact";
 import "./styles.scss";
 
 const ConactOverview = () => {
@@ -6,6 +7,8 @@ const ConactOverview = () => {
     <section className="contact-overview inner-container">
       <div className="form">
         <h2>Get in Touch</h2>
+
+        <ContactForm />
       </div>
 
       <div className="location">

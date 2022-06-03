@@ -1,7 +1,16 @@
 import React from "react";
 import Lazyload from "react-lazyload";
+import { Carousel } from "antd";
 import { StaticImage } from "gatsby-plugin-image";
 import "./formats.scss";
+
+const contentStyle = {
+  height: "160px",
+  color: "#fff",
+  lineHeight: "160px",
+  textAlign: "center",
+  background: "#364d79",
+};
 
 const Formats = () => {
   return (
@@ -10,7 +19,19 @@ const Formats = () => {
         <h2>Ad Formats</h2>
 
         <div className="inner-container">
-          <div className="slider-container"></div>
+          <div className="slider-container">
+            <Carousel dotPosition="right">
+              <div>
+                <h3 style={contentStyle}>1</h3>
+              </div>
+              <div>
+                <h3 style={contentStyle}>2</h3>
+              </div>
+              <div>
+                <h3 style={contentStyle}>3</h3>
+              </div>
+            </Carousel>
+          </div>
 
           <div className="content-container">
             <div className="content-txt">

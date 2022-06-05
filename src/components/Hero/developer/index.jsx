@@ -5,13 +5,13 @@ import "./styles.scss";
 const DeveloperHero = () => {
   return (
     <section className="developer-hero container">
-      {/* <div className="hero-image">
+      <div className="hero-image">
         <StaticImage
           src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654087901/Upzyde/Banner_image_1_bshcup.webp"
           alt=""
           placeholder="none"
         />
-      </div> */}
+      </div>
 
       <div className="content">
         <h2>Higher Monetization.</h2>

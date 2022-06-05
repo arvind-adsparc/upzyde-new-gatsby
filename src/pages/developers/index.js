@@ -12,6 +12,7 @@ import DeveloperHero from "../../components/Hero/developer";
 import Formats from "../../components/Formats/formats";
 import RequestDemoForm from "../../components/Forms/requestDemo";
 import Seo from "../../components/Seo/seo";
+import "../commonPage.scss";
 
 const Developers = () => {
   return (
@@ -23,11 +24,14 @@ const Developers = () => {
       />
       <DeveloperHero active="developers" />
       <OtherPageOverview {...overviewData} />
-      <Works />
-      <Benefits {...benefitsData} />
-      <Formats />
-      <Partners />
-      <RequestDemoForm />
+
+      <div className="visibility-container">
+        <Works />
+        <Benefits {...benefitsData} />
+        <Formats />
+        <Partners />
+        <RequestDemoForm />
+      </div>
     </Layout>
   );
 };

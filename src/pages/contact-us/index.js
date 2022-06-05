@@ -1,7 +1,15 @@
 import React from "react";
-import ContactUsHero from "../../components/Hero/contactUs";
-import Layout from "../../components/Layout/layout";
-import ConactOverview from "../../components/Overview/contactOverview/contactOverview";
+import loadable from "@loadable/component";
+
+// import ContactUsHero from "../../components/Hero/contactUs";
+// import Layout from "../../components/Layout/layout";
+// import ConactOverview from "../../components/Overview/contactOverview/contactOverview";
+
+const Layout = loadable(() => import("../../components/Layout/layout"));
+const ContactUsHero = loadable(() => import("../../components/Hero/contactUs"));
+const ConactOverview = loadable(() =>
+  import("../../components/Overview/contactOverview/contactOverview")
+);
 
 const ContactUs = () => {
   return (

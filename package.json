@@ -14,9 +14,11 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@loadable/component": "^5.15.2",
     "antd": "^4.20.7",
     "gatsby": "^4.15.1",
     "gatsby-plugin-image": "^2.15.0",
+    "gatsby-plugin-loadable-components-ssr": "^4.2.0",
     "gatsby-plugin-react-helmet": "^5.15.0",
     "gatsby-plugin-sass": "^5.15.0",
     "gatsby-plugin-sharp": "^4.15.0",

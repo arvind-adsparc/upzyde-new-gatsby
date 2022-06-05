@@ -13,10 +13,6 @@
   .hero-image {
     grid-column: 1 / span 12;
     grid-row: 1 / span 12;
-    @media only screen and (max-width: $mobile) {
-      // height: 35vw;
-      display: none;
-    }
   }
 
   .content {

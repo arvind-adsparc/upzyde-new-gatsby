@@ -18,7 +18,7 @@ const Developers = () => {
     <Layout page="developers">
       <Seo
         url="https://res.cloudinary.com/dqove2qhg/image/upload/v1654087901/Upzyde/Banner_image_1_bshcup.webp"
-        title=" Develoeprs | Upzyde"
+        title=" Developers | Upzyde"
         description="Use Upzyde’s advanced tech to maximize revenue with in-app bidding. Our innovative ad monetization features safeguard your brand, improve UX, and serve you with maximum return on inventory."
       />
       <DeveloperHero active="developers" />

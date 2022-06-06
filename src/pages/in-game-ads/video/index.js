@@ -3,6 +3,7 @@ import HelpingPublisher from "../../../components/HelpingPublishers";
 import VideoAdHero from "../../../components/Hero/inGameAds/video";
 import Layout from "../../../components/Layout/layout";
 import OtherPageOverview from "../../../components/Overview/OtherPageOverview/otherPageOverview";
+import Revenue from "../../../components/Revenue";
 import Seo from "../../../components/Seo/seo";
 
 export const overviewData = {
@@ -26,6 +27,7 @@ const VideoAds = () => {
       <VideoAdHero />
       <OtherPageOverview {...overviewData} />
       <HelpingPublisher />
+      <Revenue />
     </Layout>
   );
 };

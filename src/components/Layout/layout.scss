@@ -12,6 +12,19 @@
   margin: 0 auto;
 }
 
+// screens
+.mobile {
+  display: none;
+  @media only screen and (max-width: $mobile) {
+    display: block;
+  }
+}
+
+.desktop {
+  @media only screen and (max-width: $mobile) {
+    display: none;
+  }
+}
 // form defaults
 
 input,

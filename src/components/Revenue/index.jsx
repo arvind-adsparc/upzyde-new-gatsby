@@ -1,6 +1,6 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
-
+import IncreaseRevenueForm from "../Forms/increaseRevenue";
 import "./styles.scss";
 
 const Revenue = () => {
@@ -19,6 +19,8 @@ const Revenue = () => {
           </h2>
 
           <p>Join Upzyde and start making the most of your games today</p>
+
+          <IncreaseRevenueForm />
         </div>
       </div>
     </section>

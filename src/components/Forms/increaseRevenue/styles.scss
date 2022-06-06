@@ -1,0 +1,18 @@
+@import "../../../styles/variables.scss";
+
+.revenueForm-container {
+  width: 50%;
+  margin: $margin2x auto;
+
+  input {
+    border-radius: 20px;
+    background: transparent;
+    outline: none;
+  }
+
+  .ant-form-item-explain-error {
+    color: $neutralWhite;
+    margin: $margin1x 0;
+    text-align: initial;
+  }
+}

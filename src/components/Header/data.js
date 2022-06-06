@@ -15,6 +15,12 @@ const headerData = [
     text: "Advertisers",
   },
   {
+    id: "inGameAds",
+    dropdown: true,
+    to: "/in-game-ads/video",
+    text: "In Game Ads",
+  },
+  {
     id: "contact",
     to: "/contact-us",
     text: "Contact Us",

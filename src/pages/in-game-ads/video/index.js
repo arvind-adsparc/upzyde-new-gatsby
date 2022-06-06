@@ -15,7 +15,7 @@ export const overviewData = {
 
 const VideoAds = () => {
   return (
-    <Layout>
+    <Layout page="inGameAds">
       <VideoAdHero />
       <OtherPageOverview {...overviewData} />
     </Layout>

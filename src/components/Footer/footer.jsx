@@ -1,5 +1,6 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
+import Newsletter from "../Forms/newsletter";
 
 import "./footer.scss";
 
@@ -20,6 +21,7 @@ const Footer = () => {
 
           <div className="form">
             <h3 className="color-red">Subscribe to Newsletter</h3>
+            <Newsletter />
           </div>
 
           <div className="follow-us">

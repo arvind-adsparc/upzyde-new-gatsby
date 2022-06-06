@@ -1,0 +1,29 @@
+@import "../../../styles/variables.scss";
+
+.newsletter-form {
+  .group-items {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+  }
+
+  .ant-form-item {
+    margin: inherit;
+  }
+
+  input {
+    border: none;
+    border-bottom: 1px solid $neutralBlack;
+    outline: none;
+  }
+
+  .cta {
+    .btn {
+      background: none;
+      font-weight: $regular;
+      font-size: 0.9rem;
+      padding: 0.5rem;
+      color: $neutralBlack;
+    }
+  }
+}

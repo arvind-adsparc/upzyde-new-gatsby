@@ -26,6 +26,12 @@
     justify-content: space-between;
     flex-wrap: wrap;
     // align-items: center;
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
     @media only screen and (max-width: $mobileMedium) {
       display: grid;
       grid-template-columns: repeat(6, 1fr);

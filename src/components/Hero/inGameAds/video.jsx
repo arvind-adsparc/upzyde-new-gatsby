@@ -8,7 +8,7 @@ const VideoAdHero = () => {
       <div className="hero-image">
         <div className="mobile">
           <StaticImage
-            src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654511218/Upzyde/in_game-1_banner-1_1_1_p0bhms.png"
+            src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654518936/Upzyde/in_game-1_banner-1_1_1_1_n0u85o.png"
             alt=""
             placeholder="none"
           />

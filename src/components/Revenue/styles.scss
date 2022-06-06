@@ -8,20 +8,24 @@
     margin: $margin3x 0;
     position: relative;
     color: $neutralWhite;
-    // padding: 2rem;
-    // background-image: url(https://res.cloudinary.com/dqove2qhg/image/upload/v1654507449/Upzyde/increase_your_revenue_1_wox80x.webp);
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 2rem;
+    background-image: url(https://res.cloudinary.com/dqove2qhg/image/upload/v1654507449/Upzyde/increase_your_revenue_1_wox80x.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
 
     .form-content {
-      position: absolute;
+      //   position: absolute;
 
       h2 {
         font-size: $sectionTitle;
+
+        .sentence-break {
+          display: block;
+        }
       }
 
       p {

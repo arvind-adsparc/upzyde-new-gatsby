@@ -2,7 +2,7 @@
 
 .page-header {
   background-color: rgba($color: $neutralBlack, $alpha: 0.85);
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 0;
   color: $neutralWhite;
   font-family: $primaryType;
   position: fixed;
@@ -25,18 +25,23 @@
   }
 
   .divider {
-    width: 25%;
+    width: 15%;
+
+    @media only screen and (max-width: $desktopSmall) {
+      width: 10%;
+    }
   }
 
   .nav-links {
     // width: 55%;
     flex: 1;
-    font-size: 0.8rem;
     font-weight: $medium;
 
     .link {
       cursor: pointer;
       padding: 0.3rem 0.7rem;
+      font-size: 0.8rem;
+      font-weight: $regular;
 
       &:hover {
         background-color: $primaryRed;

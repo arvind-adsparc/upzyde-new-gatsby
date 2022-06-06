@@ -1,10 +1,12 @@
 @import "../../../styles//variables.scss";
 
 .contactus-hero {
+  height: 100vh;
   .hero-image {
-    width: 100%;
-    height: 100%;
-
+    .gatsby-image-wrapper {
+      width: 100%;
+      height: 100vh;
+    }
     img {
       @media only screen and (max-width: $mobile) {
         height: 60vh;

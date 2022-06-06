@@ -7,7 +7,7 @@ const ContactUsHero = () => {
     <section className="contactus-hero container">
       <div className="hero-image">
         <StaticImage
-          src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654172465/Upzyde/banner_image_1_nzglwu.webp"
+          src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654494853/Upzyde/contact_us-1_banner1_-_1_ycqajx.webp"
           alt=""
           placeholder="none"
         />

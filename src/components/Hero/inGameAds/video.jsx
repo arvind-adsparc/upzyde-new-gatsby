@@ -7,7 +7,7 @@ const VideoAdHero = () => {
     <section className="videoAd-hero container">
       <div className="hero-image">
         <StaticImage
-          src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654172465/Upzyde/banner_image_1_nzglwu.webp"
+          src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654495670/Upzyde/in_game-1_banner-1_1_vydfe2.webp"
           alt=""
           placeholder="none"
         />

@@ -1,4 +1,5 @@
 import React from "react";
+import HelpingPublisher from "../../../components/HelpingPublishers";
 import VideoAdHero from "../../../components/Hero/inGameAds/video";
 import Layout from "../../../components/Layout/layout";
 import OtherPageOverview from "../../../components/Overview/OtherPageOverview/otherPageOverview";
@@ -18,6 +19,7 @@ const VideoAds = () => {
     <Layout page="inGameAds">
       <VideoAdHero />
       <OtherPageOverview {...overviewData} />
+      <HelpingPublisher />
     </Layout>
   );
 };

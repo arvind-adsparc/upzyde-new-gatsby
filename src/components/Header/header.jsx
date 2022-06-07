@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import { StaticImage } from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 import headerData from "./data";
 import "./header.scss";
@@ -11,11 +11,12 @@ const Header = ({ activeID }) => {
     <header className="page-header">
       <div className="inner-container flex-container">
         <div className="logo">
-          <img
+          <StaticImage
             className=""
             src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654580565/Upzyde/log2_dromlw.webp"
             alt="Upzyde"
             title="Upzyde"
+            placeholder="none"
           />
         </div>
 

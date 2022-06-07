@@ -7,17 +7,29 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media only screen and (max-width: $mobile) {
+    padding: $sectionSpacingSmall 0;
+  }
+
   h2 {
     font-size: $sectionTitle;
     text-transform: uppercase;
     margin-bottom: $margin2x;
     color: $neutralWhite;
+    @media only screen and (max-width: $mobile) {
+      font-size: $sectionTitleSmall;
+      margin-bottom: $margin1x;
+    }
   }
 
   h3 {
     font-size: $sectionSubTitle;
     margin: $margin2x 0;
     color: $primary;
+    @media only screen and (max-width: $mobile) {
+      font-size: $sectionSubTitleSmall;
+      margin: $margin1x 0;
+    }
   }
 
   .content-container {
@@ -55,12 +67,27 @@
     grid-template-columns: repeat(2, 1fr);
     width: 70%;
     margin: 0 auto;
+    @media only screen and (max-width: $mobile) {
+      width: 80%;
+    }
+
+    @media only screen and (max-width: $mobileMedium) {
+      grid-template-columns: 1fr;
+    }
   }
 
   .three-columns {
     grid-template-columns: repeat(3, 1fr);
     width: 75%;
     margin: 0 auto;
+
+    @media only screen and (max-width: $mobile) {
+      width: 80%;
+    }
+
+    @media only screen and (max-width: $mobileMedium) {
+      grid-template-columns: 1fr;
+    }
   }
   .cta {
     margin-top: $margin2x;

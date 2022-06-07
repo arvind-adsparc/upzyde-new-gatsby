@@ -29,7 +29,11 @@
   }
 
   .slider {
-    padding: 2rem;
+    padding: 4rem;
+    background-image: url(https://res.cloudinary.com/dqove2qhg/image/upload/v1654583103/Upzyde/helping_publisher_blocks1_1_n815yw.webp);
+    background-size: contain;
+    background-repeat: no-repeat, repeat;
+    background-position: center;
 
     &-title {
       font-weight: $bold;
@@ -51,12 +55,12 @@
   }
 
   .prev-arrow {
-    left: 10%;
+    left: 15%;
     bottom: 50%;
   }
 
   .next-arrow {
-    right: 10%;
+    right: 15%;
     bottom: 50%;
   }
 }

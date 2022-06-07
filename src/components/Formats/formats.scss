@@ -26,8 +26,15 @@
   .slider-container {
     width: 450px;
     margin: 2rem auto;
+
+    @media only screen and (max-width: $mobileSmall) {
+      width: 300px;
+    }
     .slider {
       height: 15rem;
+      @media only screen and (max-width: $mobileSmall) {
+        height: 12rem;
+      }
     }
 
     .ant-carousel-vertical {

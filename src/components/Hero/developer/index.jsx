@@ -10,6 +10,7 @@ const DeveloperHero = () => {
           src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654087901/Upzyde/Banner_image_1_bshcup.webp"
           alt=""
           placeholder="none"
+          loading="eager"
         />
       </div>
 

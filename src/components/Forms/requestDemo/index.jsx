@@ -1,8 +1,8 @@
 import React from "react";
-import { Form, Input } from "antd";
+import { Form, Input, Select } from "antd";
 import "./styles.scss";
 
-// const { Option } = Select;
+const { Option } = Select;
 
 const RequestDemoForm = () => {
   const onFinish = (values) => {
@@ -55,6 +55,21 @@ const RequestDemoForm = () => {
               ]}
             >
               <Input placeholder="Email" />
+            </Form.Item>
+
+            <Form.Item
+              name="format"
+              rules={[
+                {
+                  required: true,
+                  message: "Please select an Ad Format!",
+                },
+              ]}
+            >
+              <Select placeholder="Ad Format">
+                <Option value="adFormat">Ad Format</Option>
+                <Option value="other">Other</Option>
+              </Select>
             </Form.Item>
           </div>
 

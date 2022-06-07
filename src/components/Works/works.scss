@@ -3,15 +3,24 @@
 .works-container {
   padding: $sectionSpacing 0;
   text-align: center;
+  @media only screen and (max-width: $mobile) {
+    padding: $sectionSpacingSmall 0;
+  }
 
   h2 {
     font-size: $sectionTitle;
     text-transform: uppercase;
+    @media only screen and (max-width: $mobile) {
+      font-size: $sectionTitleSmall;
+    }
   }
 
   .content {
     width: 60%;
     margin: $margin2x auto;
+    @media only screen and (max-width: $mobile) {
+      width: 70%;
+    }
   }
 
   .cta {

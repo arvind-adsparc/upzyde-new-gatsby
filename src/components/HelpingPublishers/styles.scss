@@ -52,15 +52,16 @@
     position: absolute;
     display: inline-block;
     cursor: pointer;
+    font-size: 1.5rem;
   }
 
   .prev-arrow {
     left: 15%;
-    bottom: 50%;
+    bottom: 45%;
   }
 
   .next-arrow {
     right: 15%;
-    bottom: 50%;
+    bottom: 45%;
   }
 }

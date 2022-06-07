@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { Carousel } from "antd";
 // import { StaticImage } from "gatsby-plugin-image";
+import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import "./styles.scss";
 
 const HelpingPublisher = () => {
@@ -19,7 +20,7 @@ const HelpingPublisher = () => {
             className="prev-arrow arrow"
             onClick={() => slider.current.prev()}
           >
-            Prev
+            <LeftOutlined />
           </div>
 
           <Carousel effect="fade" dots={false} ref={slider}>
@@ -65,7 +66,7 @@ const HelpingPublisher = () => {
             className="next-arrow arrow"
             onClick={() => slider.current.next()}
           >
-            Next
+            <RightOutlined />
           </div>
         </div>
       </div>

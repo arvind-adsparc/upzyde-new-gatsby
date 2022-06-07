@@ -11,6 +11,8 @@ const ContactUsHero = () => {
           alt=""
           placeholder="none"
           layout="fullWidth"
+          loading="eager"
+          objectFit="fill"
         />
       </div>
     </section>

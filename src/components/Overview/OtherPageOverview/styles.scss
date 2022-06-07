@@ -5,13 +5,23 @@
   background-color: $neutralBlack;
   color: $neutralWhite;
 
+  @media only screen and (max-width: $mobile) {
+    padding: $sectionSpacingSmall 0;
+  }
+
   .section-content {
     width: 70%;
     max-width: 600px;
+    @media only screen and (max-width: $mobile) {
+      width: 90%;
+    }
     margin: 0 auto;
     text-align: center;
     line-height: 28px;
     font-size: $sectionPara;
+    @media only screen and (max-width: $mobile) {
+      font-size: $sectionParaSmall;
+    }
 
     p {
       margin-bottom: $margin1halfx;

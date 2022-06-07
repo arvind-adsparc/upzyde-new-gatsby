@@ -63,7 +63,7 @@ const Footer = () => {
           <div className="logo">
             <StaticImage
               className=""
-              src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654088761/Upzyde/log2_csjfn8.png"
+              src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654580565/Upzyde/log2_dromlw.webp"
               alt="Upzyde"
               title="Upzyde"
               placeholder="none"

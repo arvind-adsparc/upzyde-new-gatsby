@@ -17,4 +17,46 @@
       display: block;
     }
   }
+
+  .slider-container {
+    position: relative;
+  }
+
+  .ant-carousel {
+    width: 600px;
+    margin: $margin1x auto;
+    color: $neutralWhite;
+  }
+
+  .slider {
+    padding: 2rem;
+
+    &-title {
+      font-weight: $bold;
+      font-size: 1rem;
+      margin-bottom: $margin1x;
+      text-transform: uppercase;
+    }
+
+    &-description {
+      font-weight: $regular;
+      font-size: 0.8rem;
+    }
+  }
+
+  .arrow {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .prev-arrow {
+    left: 10%;
+    bottom: 50%;
+  }
+
+  .next-arrow {
+    right: 10%;
+    bottom: 50%;
+  }
 }

@@ -8,12 +8,13 @@
 
   @media only screen and (max-width: $mobile) {
     flex-direction: column;
+    padding: $sectionSpacingSmall 0;
   }
 
   .form {
     width: 60%;
     @media only screen and (max-width: $mobile) {
-      width: 80%;
+      width: 100%;
       margin: $margin1x auto;
     }
   }
@@ -24,14 +25,20 @@
       line-height: 10px;
       font-weight: $medium;
       font-size: $default;
+      @media only screen and (max-width: $mobile) {
+        font-size: 0.9rem;
+      }
     }
     @media only screen and (max-width: $mobile) {
-      width: 80%;
+      width: 100%;
       margin: $margin1x auto;
     }
   }
 
   h2 {
     font-size: $sectionTitle;
+    @media only screen and (max-width: $mobile) {
+      font-size: $sectionTitleSmall;
+    }
   }
 }

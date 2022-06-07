@@ -8,6 +8,7 @@ const AdvertisersHero = () => {
         <img
           src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654172465/Upzyde/banner_image_1_nzglwu.webp"
           alt=""
+          loading="lazy"
           // placeholder="none"
         />
       </div>

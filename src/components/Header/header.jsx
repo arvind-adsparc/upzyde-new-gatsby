@@ -17,6 +17,7 @@ const Header = ({ activeID }) => {
             alt="Upzyde"
             title="Upzyde"
             placeholder="none"
+            loading="eager"
           />
         </div>
 

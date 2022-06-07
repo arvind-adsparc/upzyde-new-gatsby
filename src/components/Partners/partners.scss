@@ -5,15 +5,25 @@
   background-color: $neutralBlack;
   color: $neutralWhite;
   text-align: center;
+  @media only screen and (max-width: $mobile) {
+    padding: $sectionSpacingSmall 0;
+  }
 
   h2 {
     font-size: $sectionTitle;
     text-transform: uppercase;
     margin-bottom: $margin2x;
+    @media only screen and (max-width: $mobile) {
+      font-size: $sectionTitleSmall;
+      margin-bottom: $margin1x;
+    }
   }
 
   .content {
     width: 60%;
     margin: $margin2x auto;
+    @media only screen and (max-width: $mobile) {
+      width: 80%;
+    }
   }
 }

@@ -3,10 +3,19 @@
 .rqDemo-container {
   padding: $sectionSpacing 0;
 
+  @media only screen and (max-width: $mobile) {
+    padding: $sectionSpacingSmall 0;
+  }
+
   .formItem-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+
+    @media only screen and (max-width: $mobileMedium) {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
   }
 
   input {
@@ -16,6 +25,9 @@
   .cta {
     margin: $margin2x 0;
     text-align: center;
+    @media only screen and (max-width: $mobileMedium) {
+      margin: $margin1x 0;
+    }
     button {
       background-color: $primaryRed;
       color: $neutralWhite;

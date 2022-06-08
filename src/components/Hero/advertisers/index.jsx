@@ -4,7 +4,7 @@ import "./styles.scss";
 
 const AdvertisersHero = () => {
   return (
-    <section className="advertisers-hero container">
+    <section className="advertisers-hero">
       <div className="hero-image">
         <StaticImage
           src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654172465/Upzyde/banner_image_1_nzglwu.webp"

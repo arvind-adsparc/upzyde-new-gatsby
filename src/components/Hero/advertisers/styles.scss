@@ -2,13 +2,16 @@
 
 .advertisers-hero {
   height: 70vh;
+  width: 100vw;
   @media only screen and (max-width: $mobile) {
     height: 40vh;
   }
   .hero-image {
     height: 100%;
+    width: 100%;
     .gatsby-image-wrapper {
       height: 100%;
+      width: 100%;
     }
   }
 }

@@ -9,7 +9,7 @@ const Header = ({ activeID }) => {
 
   return (
     <header className="page-header">
-      <div className="inner-container flex-container">
+      <div className=" flex-container">
         <div className="logo">
           <StaticImage
             className=""

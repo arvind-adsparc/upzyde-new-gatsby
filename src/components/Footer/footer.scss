@@ -11,6 +11,11 @@
   background-size: 100% 50rem;
   // background-size: cover;
 
+  @media only screen and (min-width: $desktopLarge) {
+    height: 70rem;
+    background-size: 100% 70rem;
+  }
+
   .grid-container {
     display: grid;
 

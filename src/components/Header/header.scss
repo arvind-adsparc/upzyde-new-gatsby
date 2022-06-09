@@ -39,6 +39,10 @@
   .divider {
     width: 15%;
 
+    @media only screen and (min-width: $desktopLarge) {
+      width: 10%;
+    }
+
     @media only screen and (max-width: $desktopSmall) {
       width: 10%;
     }
@@ -61,6 +65,7 @@
 
       @media only screen and (min-width: $desktopLarge) {
         font-size: 1.2rem;
+        padding: 0.5rem 1.5rem;
       }
 
       &:hover {

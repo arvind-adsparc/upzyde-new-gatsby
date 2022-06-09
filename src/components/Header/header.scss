@@ -59,7 +59,7 @@
 
     .link {
       cursor: pointer;
-      padding: 0.3rem 0.7rem;
+      padding: 0.3rem 1rem;
       font-size: 0.8rem;
       font-weight: $regular;
 
@@ -71,13 +71,13 @@
       &:hover {
         background-color: $primaryRed;
 
-        border-radius: 20px;
+        border-radius: 30px;
       }
     }
 
     .active {
       background-color: $primaryRed;
-      border-radius: 20px;
+      border-radius: 30px;
     }
   }
 

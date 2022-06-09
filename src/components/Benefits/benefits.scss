@@ -16,6 +16,10 @@
     text-transform: uppercase;
     margin-bottom: $margin2x;
     color: $neutralWhite;
+
+    @media only screen and (min-width: $desktopLarge) {
+      font-size: $sectionTitleBig;
+    }
     @media only screen and (max-width: $mobile) {
       font-size: $sectionTitleSmall;
       margin-bottom: $margin1x;
@@ -27,6 +31,11 @@
     margin: $margin2x 0;
     color: $primary;
     font-weight: $bold;
+
+    @media only screen and (min-width: $desktopLarge) {
+      font-size: $sectionSubTitleBig;
+    }
+
     @media only screen and (max-width: $mobile) {
       font-size: $sectionSubTitleSmall;
       margin: $margin1x 0;
@@ -50,6 +59,9 @@
         font-weight: $bold;
         padding: 0.7rem 0;
         text-transform: uppercase;
+        @media only screen and (min-width: $desktopLarge) {
+          font-size: 1.2rem;
+        }
       }
 
       .card-txt {
@@ -60,6 +72,9 @@
         width: 90%;
         margin: 0 auto;
         line-height: 20px;
+        @media only screen and (min-width: $desktopLarge) {
+          font-size: 1rem;
+        }
       }
     }
   }
@@ -81,6 +96,10 @@
     grid-template-columns: repeat(3, 1fr);
     width: 90%;
     margin: 0 auto;
+
+    @media only screen and (min-width: $desktopLarge) {
+      width: 100%;
+    }
 
     @media only screen and (max-width: $mobile) {
       width: 80%;

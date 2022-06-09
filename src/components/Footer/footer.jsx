@@ -69,6 +69,28 @@ const Footer = () => {
               placeholder="none"
             />
           </div>
+
+          <div className="links">
+            <div className="link-head">
+              Quick Links
+              <span></span>
+            </div>
+
+            <div className="link-group">
+              <div>
+                <div className="link">Advertiser T&C</div>
+                <div className="link">Brand Safety</div>
+                <div className="link">Publisher T&C</div>
+                <div className="link">Publisher Guidelines</div>
+              </div>
+              <div>
+                <div className="link">Privacy Policy</div>
+                <div className="link">Privacy Options</div>
+                <div className="link">Cookie Policy</div>
+                <div className="link">Contact</div>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="copyright-section ">
           <div>2022 © Copyright. All rights reserved. Privacy Policy</div>

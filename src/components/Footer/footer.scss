@@ -55,6 +55,10 @@
       font-size: 0.8rem;
       font-weight: $medium;
       margin-bottom: $marginhalfx;
+
+      @media only screen and (min-width: $desktopLarge) {
+        font-size: 1.2rem;
+      }
     }
 
     .color-red {
@@ -78,6 +82,9 @@
 
     .mail-txt {
       font-size: $default;
+      @media only screen and (min-width: $desktopLarge) {
+        font-size: 1.2rem;
+      }
     }
 
     .social-link {
@@ -92,6 +99,9 @@
 
   .logo {
     width: 8rem;
+    @media only screen and (min-width: $desktopLarge) {
+      width: 12rem;
+    }
   }
 
   .copyright-section {

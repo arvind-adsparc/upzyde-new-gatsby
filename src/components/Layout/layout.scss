@@ -10,6 +10,10 @@
   max-width: 1000px;
   width: 90%;
   margin: 0 auto;
+
+  @media only screen and (min-width: $desktopLarge) {
+    max-width: 1200px;
+  }
 }
 
 // screens

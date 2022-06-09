@@ -2,7 +2,7 @@
 
 .developer-hero {
   position: relative;
-  display: grid;
+  // display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
   height: 80vh;
@@ -28,9 +28,9 @@
   }
 
   .content {
-    // position: absolute;
-    // top: 35%;
-    // right: 20%;
+    position: absolute;
+    top: 35%;
+    right: 15%;
     color: $neutralWhite;
     text-transform: uppercase;
 

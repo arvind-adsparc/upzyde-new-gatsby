@@ -21,7 +21,8 @@ const Formats = () => {
 
             <div className="slider">
               <img
-                src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654245035/Upzyde/iphone-empty-1_1_asqoxs.webp"
+                src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654243593/Upzyde/iphone-_1_w43h6z.webp"
+                // src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654245035/Upzyde/iphone-empty-1_1_asqoxs.webp"
                 alt=""
                 placeholder="none"
               />

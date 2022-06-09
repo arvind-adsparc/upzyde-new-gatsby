@@ -26,6 +26,7 @@
     font-size: $sectionSubTitle;
     margin: $margin2x 0;
     color: $primary;
+    font-weight: $bold;
     @media only screen and (max-width: $mobile) {
       font-size: $sectionSubTitleSmall;
       margin: $margin1x 0;
@@ -45,7 +46,7 @@
 
       .card-title {
         background-color: $gradientOne;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         font-weight: $bold;
         padding: 0.7rem 0;
         text-transform: uppercase;
@@ -54,7 +55,7 @@
       .card-txt {
         font-size: $cardPara;
         padding: 0.7rem;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         display: flex;
         width: 90%;
         margin: 0 auto;
@@ -78,7 +79,7 @@
 
   .three-columns {
     grid-template-columns: repeat(3, 1fr);
-    width: 75%;
+    width: 90%;
     margin: 0 auto;
 
     @media only screen and (max-width: $mobile) {

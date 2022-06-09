@@ -12,6 +12,13 @@ const VideoAdHero = () => {
           placeholder="none"
         />
       </div>
+
+      <div className="content">
+        <h2>
+          Engaging <span>ad experiences</span> <span>via in-game</span>{" "}
+          <span>display ads</span>{" "}
+        </h2>
+      </div>
     </section>
   );
 };

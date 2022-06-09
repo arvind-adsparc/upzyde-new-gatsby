@@ -12,15 +12,19 @@
   .section-content {
     width: 70%;
     max-width: 600px;
-    @media only screen and (max-width: $mobile) {
-      width: 90%;
-    }
     margin: 0 auto;
     text-align: center;
     line-height: 28px;
     font-size: $sectionPara;
+
+    @media only screen and (min-width: $desktopLarge) {
+      max-width: 1000px;
+      font-size: 1.5rem;
+      line-height: 35px;
+    }
     @media only screen and (max-width: $mobile) {
       font-size: $sectionParaSmall;
+      width: 90%;
     }
 
     p {

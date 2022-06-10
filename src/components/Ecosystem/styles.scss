@@ -1,0 +1,14 @@
+@import "../../styles/variables.scss";
+
+.ecosystem-container {
+  padding: $sectionSpacing 0;
+  text-align: center;
+  background-color: black;
+
+  h2 {
+    font-size: $sectionTitle;
+    text-transform: uppercase;
+    margin-bottom: $margin1x;
+    color: $neutralWhite;
+  }
+}

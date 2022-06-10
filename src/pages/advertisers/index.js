@@ -26,7 +26,7 @@ const Advertisers = () => {
       <Works />
       <Benefits {...benefitsData} />
       <Formats />
-      <Partners />
+      <Partners heading="Trusted Partners" />
       <RequestDemoForm />
     </Layout>
   );

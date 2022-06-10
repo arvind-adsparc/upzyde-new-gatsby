@@ -2,6 +2,7 @@ import * as React from "react";
 import Ecosystem from "../components/Ecosystem";
 import Layout from "../components/Layout/layout";
 import OneSolution from "../components/OneSolution";
+import Partners from "../components/Partners/partners";
 import Seo from "../components/Seo/seo";
 
 const IndexPage = () => {
@@ -14,6 +15,7 @@ const IndexPage = () => {
       />
       <OneSolution />
       <Ecosystem />
+      <Partners heading="Strategic Partners" />
     </Layout>
   );
 };

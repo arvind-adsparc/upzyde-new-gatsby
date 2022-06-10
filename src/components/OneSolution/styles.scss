@@ -1,0 +1,30 @@
+@import "../../styles/variables.scss";
+
+.one-sol-container {
+  padding: $sectionSpacing 0;
+  text-align: center;
+  background-color: $neutralGray;
+
+  h2 {
+    font-size: $sectionTitle;
+    text-transform: uppercase;
+    margin-bottom: $margin2x;
+    color: $neutralBlack;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .card {
+      .card-txt {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1rem;
+        margin-top: $margin1x;
+      }
+    }
+  }
+}

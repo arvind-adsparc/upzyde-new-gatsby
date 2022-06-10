@@ -1,0 +1,47 @@
+@import "../../styles/variables.scss";
+
+.choose-container {
+  padding: $sectionSpacing 0;
+  background-image: url(https://res.cloudinary.com/dqove2qhg/image/upload/v1654844660/Upzyde/why_choose_upzyde_bg_1_aufhif.webp);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100% 55vh;
+
+  h2 {
+    font-size: $sectionTitle;
+    color: $neutralWhite;
+    text-transform: uppercase;
+
+    span {
+      display: block;
+    }
+  }
+
+  .content {
+    display: flex;
+    color: $neutralWhite;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    .card {
+      background-image: url(https://res.cloudinary.com/dqove2qhg/image/upload/v1654846646/Upzyde/why_choose_upzyde_bg-icon-bg_1_ctdeqg.webp);
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      width: 30%;
+      padding: 1rem;
+
+      .txt-head {
+        font-weight: bold;
+        font-size: 1rem;
+      }
+
+      .txt-para {
+        margin-bottom: 1rem;
+        span {
+          display: block;
+        }
+      }
+    }
+  }
+}

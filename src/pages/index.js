@@ -4,6 +4,7 @@ import HomeHero from "../components/Hero/homepage";
 import Layout from "../components/Layout/layout";
 import OneSolution from "../components/OneSolution";
 import Partners from "../components/Partners/partners";
+import AdvertisersAndDeveloers from "../components/Sections/advertisersAndDevelopers";
 import Seo from "../components/Seo/seo";
 import WhyChoose from "../components/WhyChoose";
 
@@ -18,6 +19,7 @@ const IndexPage = () => {
       <HomeHero />
       <WhyChoose />
       <OneSolution />
+      <AdvertisersAndDeveloers />
       <Ecosystem />
       <Partners heading="Strategic Partners" />
     </Layout>

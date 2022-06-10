@@ -1,0 +1,37 @@
+@import "../../../styles/variables.scss";
+
+.ad-dev-container {
+  .advertisers {
+    background-image: url(https://res.cloudinary.com/dqove2qhg/image/upload/v1654850284/Upzyde/brand_advertiser-1_tzseqv.webp);
+  }
+
+  .developers {
+    background-image: url(https://res.cloudinary.com/dqove2qhg/image/upload/v1654850285/Upzyde/game_developer-1_p1psbo.webp);
+  }
+  .advertisers,
+  .developers {
+    padding: 6rem 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $neutralWhite;
+
+    h2 {
+      font-size: 1.7rem;
+      text-transform: uppercase;
+    }
+
+    p {
+      span {
+        display: block;
+      }
+    }
+
+    .cta {
+      margin-top: $margin2x;
+      .btn {
+        color: $neutralBlack;
+      }
+    }
+  }
+}

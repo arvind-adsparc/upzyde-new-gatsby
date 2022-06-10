@@ -1,7 +1,7 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import "./styles.scss";
-import NextGen from "../../Nextgen";
+import NextGen from "../../NextGen";
 
 const HomeHero = () => {
   return (

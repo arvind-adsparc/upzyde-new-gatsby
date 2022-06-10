@@ -1,0 +1,68 @@
+@import "../../../styles/variables.scss";
+
+.player-dev-container {
+  padding: $sectionSpacing 0;
+  background-color: black;
+  color: $neutralWhite;
+
+  .card-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .player {
+    background-image: linear-gradient(
+        rgb(255, 66, 14, 0.8),
+        rgb(255, 66, 14, 0.5)
+      ),
+      url(https://res.cloudinary.com/dqove2qhg/image/upload/v1654864656/Upzyde/Players_will_play_bg_1_hj59sn.webp);
+  }
+
+  .developer {
+    background-image: linear-gradient(
+        rgb(25, 149, 173, 0.8),
+        rgb(25, 149, 173, 0.5)
+      ),
+      url(https://res.cloudinary.com/dqove2qhg/image/upload/v1654865513/Upzyde/developers_are_the_new-bg_1_pscb06.webp);
+  }
+  .card {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .card-head {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1rem;
+      margin-bottom: $margin2x;
+    }
+
+    .card-content {
+      .divider {
+        background-color: $neutralWhite;
+        height: 0.1rem;
+        width: 50%;
+        margin: 1rem auto;
+      }
+
+      .cta {
+        color: $neutralBlack;
+        margin-top: $margin2x;
+
+        .btn {
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+}

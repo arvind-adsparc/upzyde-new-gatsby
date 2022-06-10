@@ -1,0 +1,77 @@
+@import "../../styles/variables.scss";
+
+.next-gen-container {
+  padding: 6rem 0;
+  background-image: url(https://res.cloudinary.com/dqove2qhg/image/upload/v1654866198/Upzyde/Body-bg1_1_cyvqyo.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .content {
+    position: relative;
+    background-color: black;
+    color: $neutralWhite;
+    width: 90%;
+    max-width: 770px;
+    margin: 0 auto;
+
+    .group {
+      display: flex;
+      justify-content: space-between;
+      padding: 6rem 4rem;
+    }
+
+    .vr-headset {
+      position: absolute;
+      top: -15%;
+      left: -10%;
+    }
+
+    .triangle {
+      position: absolute;
+      bottom: -15%;
+      left: -10%;
+    }
+
+    .plus {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .controller {
+      position: absolute;
+      bottom: -15%;
+      right: -10%;
+    }
+
+    span {
+      display: block;
+    }
+
+    .card-head {
+      font-size: 2rem;
+      font-weight: bold;
+      width: 50%;
+      text-transform: uppercase;
+      line-height: 35px;
+    }
+
+    .card-content {
+      flex: 1;
+
+      p {
+        margin-bottom: 0.5rem;
+      }
+
+      .cta {
+        margin-top: $margin2x;
+        .btn {
+          background: transparent;
+          border: 1px solid $neutralWhite;
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+}

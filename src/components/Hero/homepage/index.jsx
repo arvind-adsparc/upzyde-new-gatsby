@@ -1,6 +1,7 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import "./styles.scss";
+import NextGen from "../../Nextgen";
 
 const HomeHero = () => {
   return (
@@ -19,6 +20,10 @@ const HomeHero = () => {
         <h2>Better Retention.</h2>
         <h2>Incremental Revenue.</h2>
       </div> */}
+
+      <div className="scroll-div">
+        <NextGen />
+      </div>
     </section>
   );
 };

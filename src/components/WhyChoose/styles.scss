@@ -30,6 +30,11 @@
 
       width: 30%;
       padding: 1rem;
+      padding-top: 2rem;
+
+      .card-txt {
+        margin-top: $margin1x;
+      }
 
       .txt-head {
         font-weight: bold;

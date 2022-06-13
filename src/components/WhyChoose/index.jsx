@@ -15,11 +15,10 @@ const WhyChoose = () => {
           <div className="card">
             <div className="card-img">
               <StaticImage
-                src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654846219/Upzyde/why_choose_upzyde_bg-icon-W-1_fghxyd.webp"
+                src="https://res.cloudinary.com/dqove2qhg/image/upload/v1655095285/Upzyde/why_choose_upzyde_bg-icon-W-1_wco63e.webp"
                 alt=""
                 placeholder="none"
-                width={90}
-                height={90}
+                width={60}
               />
             </div>
 
@@ -34,11 +33,10 @@ const WhyChoose = () => {
           <div className="card">
             <div className="card-img">
               <StaticImage
-                src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654846219/Upzyde/why_choose_upzyde_bg-icon-W-1_fghxyd.webp"
+                src="https://res.cloudinary.com/dqove2qhg/image/upload/v1655095283/Upzyde/why_choose_upzyde_bg-icon-W-2_aqwqyp.webp"
                 alt=""
                 placeholder="none"
-                width={90}
-                height={90}
+                width={60}
               />
             </div>
 
@@ -53,11 +51,10 @@ const WhyChoose = () => {
           <div className="card">
             <div className="card-img">
               <StaticImage
-                src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654846219/Upzyde/why_choose_upzyde_bg-icon-W-1_fghxyd.webp"
+                src="https://res.cloudinary.com/dqove2qhg/image/upload/v1655095281/Upzyde/why_choose_upzyde_bg-icon-W-3_uvyt4a.webp"
                 alt=""
                 placeholder="none"
-                width={90}
-                height={90}
+                width={60}
               />
             </div>
 
@@ -73,11 +70,10 @@ const WhyChoose = () => {
           <div className="card">
             <div className="card-img">
               <StaticImage
-                src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654846219/Upzyde/why_choose_upzyde_bg-icon-W-1_fghxyd.webp"
+                src="https://res.cloudinary.com/dqove2qhg/image/upload/v1655095280/Upzyde/why_choose_upzyde_bg-icon-W-4_sm7jna.webp"
                 alt=""
                 placeholder="none"
-                width={90}
-                height={90}
+                width={60}
               />
             </div>
 
@@ -92,11 +88,10 @@ const WhyChoose = () => {
           <div className="card">
             <div className="card-img">
               <StaticImage
-                src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654846219/Upzyde/why_choose_upzyde_bg-icon-W-1_fghxyd.webp"
+                src="https://res.cloudinary.com/dqove2qhg/image/upload/v1655095279/Upzyde/why_choose_upzyde_bg-icon-W-5_fwvjx8.webp"
                 alt=""
                 placeholder="none"
-                width={90}
-                height={90}
+                width={60}
               />
             </div>
 

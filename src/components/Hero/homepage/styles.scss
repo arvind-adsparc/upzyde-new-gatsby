@@ -13,6 +13,21 @@
       object-fit: cover;
       //   opacity: 0.8;
     }
+
+    &:before {
+      content: "";
+      position: absolute;
+      //   background: rgba(0, 0, 0, 0.5);
+      background-image: linear-gradient(
+        rgb(25, 149, 173, 0.8),
+        rgb(25, 149, 173, 0.5)
+      );
+      border-radius: 5px;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
   }
 
   .content {

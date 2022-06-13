@@ -7,10 +7,20 @@
   background-repeat: no-repeat;
   background-size: 100% 55vh;
 
+  @media only screen and (min-width: $desktopLarge) {
+    padding: 6rem 0;
+    background-size: 100% 35vh;
+  }
+
   h2 {
     font-size: $sectionTitle;
     color: $neutralWhite;
     text-transform: uppercase;
+    margin-bottom: $margin2x;
+    @media only screen and (min-width: $desktopLarge) {
+      font-size: 2rem;
+      line-height: 35px;
+    }
 
     span {
       display: block;
@@ -39,10 +49,17 @@
       .txt-head {
         font-weight: bold;
         font-size: 1rem;
+
+        @media only screen and (min-width: $desktopLarge) {
+          font-size: 1.5rem;
+        }
       }
 
       .txt-para {
         margin-bottom: 1rem;
+        @media only screen and (min-width: $desktopLarge) {
+          font-size: 1.1rem;
+        }
         span {
           display: block;
         }

@@ -19,9 +19,16 @@
     h2 {
       font-size: 1.7rem;
       text-transform: uppercase;
+      @media only screen and (min-width: $desktopLarge) {
+        font-size: 2rem;
+        line-height: 35px;
+      }
     }
 
     p {
+      @media only screen and (min-width: $desktopLarge) {
+        font-size: 1.5rem;
+      }
       span {
         display: block;
       }
@@ -31,6 +38,9 @@
       margin-top: $margin2x;
       .btn {
         color: $neutralBlack;
+        @media only screen and (min-width: $desktopLarge) {
+          font-size: 1.3rem;
+        }
       }
     }
   }

@@ -4,7 +4,7 @@ import "./styles.scss";
 
 const NextGen = () => {
   return (
-    <section className="next-gen-container">
+    <section id="scroll-section" className="next-gen-container">
       <div className="content">
         <div className="group">
           <div className="card-head">

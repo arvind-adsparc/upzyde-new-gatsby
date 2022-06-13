@@ -21,6 +21,7 @@
   position: absolute;
   right: 0;
   width: 20px;
+  cursor: pointer;
 }
 .scroll-down::before {
   animation: scrollDownAnimation 2s infinite;

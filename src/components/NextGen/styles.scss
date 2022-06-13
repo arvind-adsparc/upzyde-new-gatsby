@@ -19,6 +19,23 @@
     margin: 0 auto;
     animation: fadein 2s;
 
+    @media only screen and (min-width: $desktopLarge) {
+      max-width: 1000px;
+    }
+
+    .gatsby-image-wrapper {
+      @media only screen and (min-width: $desktopLarge) {
+        width: 100%;
+        height: 100%;
+      }
+
+      div {
+        @media only screen and (min-width: $desktopLarge) {
+          max-width: initial !important;
+        }
+      }
+    }
+
     img:hover {
       animation: shake 0.5s;
       animation-iteration-count: infinite;
@@ -28,30 +45,45 @@
       display: flex;
       justify-content: space-between;
       padding: 6rem 4rem;
+      @media only screen and (min-width: $desktopLarge) {
+        padding: 8rem 6rem;
+      }
     }
 
     .vr-headset {
       position: absolute;
       top: -15%;
       left: -10%;
+      @media only screen and (min-width: $desktopLarge) {
+        width: 15rem;
+      }
     }
 
     .triangle {
       position: absolute;
       bottom: -15%;
       left: -10%;
+      @media only screen and (min-width: $desktopLarge) {
+        width: 15rem;
+      }
     }
 
     .plus {
       position: absolute;
       top: 0;
       right: 0;
+      @media only screen and (min-width: $desktopLarge) {
+        width: 10rem;
+      }
     }
 
     .controller {
       position: absolute;
       bottom: -15%;
       right: -10%;
+      @media only screen and (min-width: $desktopLarge) {
+        width: 15rem;
+      }
     }
 
     span {
@@ -64,6 +96,11 @@
       width: 50%;
       text-transform: uppercase;
       line-height: 35px;
+
+      @media only screen and (min-width: $desktopLarge) {
+        font-size: 3rem;
+        line-height: 55px;
+      }
     }
 
     .card-content {
@@ -71,6 +108,9 @@
 
       p {
         margin-bottom: 0.5rem;
+        @media only screen and (min-width: $desktopLarge) {
+          font-size: 1.2rem;
+        }
       }
 
       .cta {
@@ -79,6 +119,9 @@
           background: transparent;
           border: 1px solid $neutralWhite;
           font-size: 0.7rem;
+          @media only screen and (min-width: $desktopLarge) {
+            font-size: 1.3rem;
+          }
         }
       }
     }

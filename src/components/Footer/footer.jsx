@@ -32,28 +32,31 @@ const Footer = () => {
               <div className="social-link">
                 <StaticImage
                   className=""
-                  src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654166514/Upzyde/twit1_axsy40.webp"
+                  src="https://res.cloudinary.com/dqove2qhg/image/upload/v1655095600/Upzyde/s-2_c7vgbn.webp"
                   alt="Twitter"
                   title="Twitter"
                   placeholder="none"
+                  width={30}
                 />
               </div>
               <div className="social-link">
                 <StaticImage
                   className=""
-                  src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654166516/Upzyde/fb1_ogopuq.webp"
+                  src="https://res.cloudinary.com/dqove2qhg/image/upload/v1655095599/Upzyde/s-1_cklb7e.webp"
                   alt="Facebook"
                   title="Facebook"
                   placeholder="none"
+                  width={30}
                 />
               </div>
               <div className="social-link">
                 <StaticImage
                   className=""
-                  src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654166515/Upzyde/insta1_ouhjrb.webp"
+                  src="https://res.cloudinary.com/dqove2qhg/image/upload/v1655095594/Upzyde/s-3_sdppkr.webp"
                   alt="Instagram"
                   title="Instagram"
                   placeholder="none"
+                  width={30}
                 />
               </div>
             </div>

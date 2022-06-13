@@ -17,6 +17,7 @@
     width: 90%;
     max-width: 770px;
     margin: 0 auto;
+    animation: fadein 2s;
 
     .group {
       display: flex;
@@ -76,5 +77,14 @@
         }
       }
     }
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

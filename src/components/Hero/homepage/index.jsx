@@ -16,8 +16,9 @@ const HomeHero = () => {
 
       <div className="hero-video">
         <video
-          src="https://res.cloudinary.com/dqove2qhg/video/upload/v1655098149/Upzyde/testvideo_f1fi2y.mp4"
+          // src="https://res.cloudinary.com/dqove2qhg/video/upload/v1655098149/Upzyde/testvideo_f1fi2y.mp4"
           // src="https://d3tztbffe7pzlf.cloudfront.net/landing/master/747/themes/adverty/img/video.mp4"
+          src="https://res.cloudinary.com/dqove2qhg/video/upload/v1655100455/Upzyde/production_ID_3722209_ava7zh.mp4"
           autoPlay
           loop
         ></video>

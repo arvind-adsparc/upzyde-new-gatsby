@@ -4,6 +4,9 @@
   padding: $sectionSpacing 0;
   background-color: black;
   color: $neutralWhite;
+  @media only screen and (min-width: $desktopLarge) {
+    padding: 6rem 0;
+  }
 
   .card-group {
     display: grid;
@@ -11,6 +14,11 @@
     gap: 1rem;
     max-width: 650px;
     margin: 0 auto;
+
+    @media only screen and (min-width: $desktopLarge) {
+      max-width: 950px;
+      gap: 3rem;
+    }
   }
 
   .player {
@@ -36,6 +44,9 @@
     border-radius: 10px;
     text-align: center;
     line-height: 20px;
+    @media only screen and (min-width: $desktopLarge) {
+      padding: 3rem;
+    }
 
     display: flex;
     flex-direction: column;
@@ -45,9 +56,19 @@
       font-weight: bold;
       font-size: 1rem;
       margin-bottom: $margin2x;
+      @media only screen and (min-width: $desktopLarge) {
+        font-size: 1.7rem;
+        line-height: 35px;
+      }
     }
 
     .card-content {
+      p {
+        @media only screen and (min-width: $desktopLarge) {
+          font-size: 1.3rem;
+          line-height: 30px;
+        }
+      }
       .divider {
         background-color: $neutralWhite;
         height: 0.1rem;
@@ -61,6 +82,9 @@
 
         .btn {
           font-size: 0.7rem;
+          @media only screen and (min-width: $desktopLarge) {
+            font-size: 1.3rem;
+          }
         }
       }
     }

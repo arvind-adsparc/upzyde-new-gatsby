@@ -9,6 +9,7 @@ import AdvertisersAndDeveloers from "../components/Sections/advertisersAndDevelo
 import PlayersAndDevelopers from "../components/Sections/playersAndDevelopers";
 import Seo from "../components/Seo/seo";
 import WhyChoose from "../components/WhyChoose";
+import RecentNews from "../components/RecentNews";
 
 const IndexPage = () => {
   return (
@@ -27,6 +28,7 @@ const IndexPage = () => {
       <AdvertisersAndDeveloers />
       <Ecosystem />
       <Partners heading="Strategic Partners" />
+      <RecentNews />
     </Layout>
   );
 };

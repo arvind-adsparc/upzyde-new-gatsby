@@ -1,12 +1,15 @@
 @import "../../styles/variables.scss";
 
 .next-gen-container {
-  padding: 6rem 0;
+  // padding: 6rem 0;
   background-image: url(https://res.cloudinary.com/dqove2qhg/image/upload/v1654866198/Upzyde/Body-bg1_1_cyvqyo.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .content {
     position: relative;
     background-color: black;

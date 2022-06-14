@@ -15,7 +15,7 @@ const RequestDemoForm = () => {
 
   // const selectChange = () => {};
   return (
-    <section className="rqDemo-container">
+    <section className="rqDemo-container request-demo">
       <div className="inner-container">
         <Form name="" onFinish={onFinish} onFinishFailed={onFinishFailed}>
           <div className="formItem-container">

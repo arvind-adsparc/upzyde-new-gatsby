@@ -1,4 +1,5 @@
 import React from "react";
+import scrollFunction from "../../utlis/scrollFunction";
 import "./benefits.scss";
 
 const Benefits = ({
@@ -31,7 +32,9 @@ const Benefits = ({
         </div>
 
         <div className="cta">
-          <button className="btn">{cta.text}</button>
+          <button onClick={() => scrollFunction()} className="btn">
+            {cta.text}
+          </button>
         </div>
       </div>
     </section>

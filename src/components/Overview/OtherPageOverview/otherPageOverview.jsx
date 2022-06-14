@@ -1,4 +1,5 @@
 import React from "react";
+import scrollFunction from "../../../utlis/scrollFunction";
 import "./styles.scss";
 
 const OtherPageOverview = ({ content, cta }) => {
@@ -11,7 +12,12 @@ const OtherPageOverview = ({ content, cta }) => {
         />
 
         <div className="cta">
-          <button className="btn">{cta.text}</button>
+          <button
+            onClick={() => scrollFunction(".request-demo")}
+            className="btn"
+          >
+            {cta.text}
+          </button>
         </div>
       </div>
     </section>

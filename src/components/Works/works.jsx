@@ -1,5 +1,7 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
+import scrollFunction from "../../utlis/scrollFunction";
+
 import "./works.scss";
 
 const Works = () => {
@@ -17,7 +19,9 @@ const Works = () => {
       </div>
 
       <div className="cta">
-        <button className="btn">Get Started</button>
+        <button onClick={() => scrollFunction()} className="btn">
+          Get Started
+        </button>
       </div>
     </section>
   );

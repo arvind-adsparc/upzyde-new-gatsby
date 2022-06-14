@@ -33,6 +33,10 @@
       font-size: 2rem;
       line-height: 35px;
     }
+
+    @media only screen and (max-width: $mobile) {
+      font-size: 1.3rem;
+    }
   }
 
   .content {
@@ -45,6 +49,16 @@
     max-width: 900px;
     margin: 0 auto;
 
+    @media only screen and (max-width: $mobile) {
+      justify-content: space-around;
+    }
+
+    @media only screen and (max-width: $mobileMedium) {
+      justify-content: center;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
     .card {
       .card-txt {
         text-transform: uppercase;
@@ -54,6 +68,10 @@
         @media only screen and (min-width: $desktopLarge) {
           font-size: 1.5rem;
           line-height: 35px;
+        }
+
+        @media only screen and (max-width: $mobile) {
+          font-size: 0.8rem;
         }
       }
     }

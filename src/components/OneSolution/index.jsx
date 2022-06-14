@@ -13,8 +13,8 @@ const OneSolution = () => {
             src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654842788/Upzyde/one_solution-icon-1_zociqr.webp"
             alt=""
             placeholder="none"
-            width={150}
-            height={150}
+            width={120}
+            // height={150}
           />
 
           <div className="card-txt">Game Streaming</div>
@@ -25,8 +25,7 @@ const OneSolution = () => {
             src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654842786/Upzyde/one_solution-icon-2_tz8afh.webp"
             alt=""
             placeholder="none"
-            width={150}
-            height={150}
+            width={120}
           />
 
           <div className="card-txt">Console & PC</div>
@@ -37,8 +36,7 @@ const OneSolution = () => {
             src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654842785/Upzyde/one_solution-icon-3_k5f5qa.webp"
             alt=""
             placeholder="none"
-            width={150}
-            height={150}
+            width={120}
           />
 
           <div className="card-txt">Mobile & Esports</div>

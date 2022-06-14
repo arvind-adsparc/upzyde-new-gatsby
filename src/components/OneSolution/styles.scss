@@ -41,11 +41,15 @@
     align-items: center;
     flex-wrap: wrap;
 
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+
     .card {
       .card-txt {
         text-transform: uppercase;
         font-weight: bold;
-        font-size: 1rem;
+        font-size: 0.9rem;
         margin-top: $margin1x;
         @media only screen and (min-width: $desktopLarge) {
           font-size: 1.5rem;

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import "./styles.scss";
 
 const PlayersAndDevelopers = () => {
@@ -21,7 +22,9 @@ const PlayersAndDevelopers = () => {
             </p>
 
             <div className="cta">
-              <button className="btn">Learn More</button>
+              <Link to="/advertisers">
+                <button className="btn">Learn More</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -42,7 +45,9 @@ const PlayersAndDevelopers = () => {
             <div className="divider"></div>
             <p>Monetize your game and create reliable income streams now.</p>
             <div className="cta">
-              <button className="btn">Learn More</button>
+              <Link to="/developers">
+                <button className="btn">Learn More</button>
+              </Link>
             </div>
           </div>
         </div>

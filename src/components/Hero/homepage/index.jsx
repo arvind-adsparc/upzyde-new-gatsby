@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import ScrollDown from "../../ScrollDown";
 import "./styles.scss";
 
@@ -29,11 +30,15 @@ const HomeHero = () => {
 
         <div className="group">
           <div className="cta">
-            <button className="btn">An Advertiser</button>
+            <Link to="/advertisers">
+              <button className="btn">An Advertiser</button>
+            </Link>
           </div>
 
           <div className="cta">
-            <button className="btn">A Game Developer</button>
+            <Link to="/developers">
+              <button className="btn">A Game Developer</button>
+            </Link>
           </div>
         </div>
       </div>

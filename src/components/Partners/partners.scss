@@ -6,7 +6,7 @@
   color: $neutralWhite;
   text-align: center;
   @media only screen and (max-width: $mobile) {
-    padding: $sectionSpacingSmall 0;
+    padding: 4rem 0;
   }
 
   h2 {
@@ -27,7 +27,7 @@
     width: 70%;
     margin: $margin2x auto;
     @media only screen and (max-width: $mobile) {
-      width: 80%;
+      width: 90%;
     }
   }
 }

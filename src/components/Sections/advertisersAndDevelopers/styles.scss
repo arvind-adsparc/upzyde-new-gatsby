@@ -32,6 +32,10 @@
       @media only screen and (max-width: $desktopSmall) {
         font-size: 1.5rem;
       }
+
+      @media only screen and (max-width: $mobile) {
+        font-size: 1.3rem;
+      }
     }
 
     p {

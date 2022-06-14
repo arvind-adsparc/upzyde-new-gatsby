@@ -6,6 +6,10 @@
     padding: 6rem 0;
   }
 
+  @media only screen and (max-width: $desktopSmall) {
+    padding: 2rem 0;
+  }
+
   h2 {
     text-transform: uppercase;
     text-align: center;
@@ -13,6 +17,9 @@
     margin-bottom: $margin2x;
     @media only screen and (min-width: $desktopLarge) {
       font-size: 2rem;
+    }
+    @media only screen and (max-width: $mobile) {
+      font-size: 1.3rem;
     }
   }
 
@@ -29,12 +36,30 @@
       font-size: 2rem;
     }
 
+    @media only screen and (max-width: $desktopSmall) {
+      width: 80%;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      width: 70%;
+      justify-content: center;
+    }
+
+    @media only screen and (max-width: $mobileSmall) {
+      width: 90%;
+    }
+
     .gatsby-image-wrapper {
       @media only screen and (min-width: $desktopLarge) {
         width: 100%;
         height: 100%;
 
         // width: 70rem;
+      }
+
+      @media only screen and (max-width: $mobile) {
+        width: 100%;
+        height: 100%;
       }
 
       div {
@@ -49,6 +74,10 @@
       padding: 1rem;
 
       cursor: pointer;
+
+      @media only screen and (max-width: $mobile) {
+        width: 90%;
+      }
 
       h3 {
         font-size: 1rem;

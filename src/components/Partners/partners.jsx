@@ -12,6 +12,7 @@ const Partners = ({ heading }) => {
           src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654076189/Upzyde/brand_logos_-img-1_miri5w.webp"
           alt=""
           placeholder="none"
+          width={800}
         />
       </div>
     </section>

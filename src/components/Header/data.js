@@ -25,6 +25,11 @@ const headerData = [
     to: "/contact-us",
     text: "Contact Us",
   },
+  {
+    id: "dummy",
+    to: "/",
+    text: "",
+  },
 ];
 
 export default headerData;

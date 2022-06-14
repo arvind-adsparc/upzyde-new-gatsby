@@ -2,7 +2,7 @@
 
 .page-header {
   background-color: rgba($color: $neutralBlack, $alpha: 0.85);
-  padding: 1.5rem;
+  // padding: 1.5rem 0;
   color: $neutralWhite;
   font-family: $primaryType;
   position: fixed;
@@ -16,7 +16,7 @@
   border-bottom-right-radius: 10px;
   //   box-shadow: 0px 4px 11px -2px rgb(0 0 0 / 25%);
   @media only screen and (max-width: $desktopSmall) {
-    padding: 1.2rem;
+    // padding: 1.2rem;
   }
 
   .flex-container {
@@ -25,28 +25,42 @@
     align-items: center;
   }
 
+  .home-logo {
+    background-color: $neutralWhite;
+    padding: 1.2rem;
+    // width: 10rem;
+    border-bottom-left-radius: 10px;
+  }
+
+  .other-logo {
+    padding: 1.2rem;
+  }
   .logo {
-    width: 7rem;
+    width: 10rem;
 
     @media only screen and (min-width: $desktopLarge) {
       width: 12rem;
     }
     @media only screen and (max-width: $desktopSmall) {
-      width: 5rem;
+      width: 10rem;
     }
   }
 
-  .divider {
-    width: 15%;
+  // .divider {
+  //   width: 15%;
 
-    @media only screen and (min-width: $desktopLarge) {
-      width: 10%;
-    }
+  //   @media only screen and (min-width: $desktopLarge) {
+  //     width: 10%;
+  //   }
 
-    @media only screen and (max-width: $desktopSmall) {
-      width: 10%;
-    }
-  }
+  //   @media only screen and (max-width: $desktopSmall) {
+  //     width: 5%;
+  //   }
+
+  //   @media only screen and (max-width: $mobile) {
+  //     display: none;
+  //   }
+  // }
 
   .nav-links {
     // width: 55%;
@@ -82,7 +96,7 @@
   }
 
   .desktop-nav {
-    @media only screen and (max-width: $mobile) {
+    @media only screen and (max-width: $desktopSmall) {
       display: none;
     }
   }
@@ -91,8 +105,9 @@
     display: none;
     width: 1.5rem;
     cursor: pointer;
+    margin-right: 1.2rem;
 
-    @media only screen and (max-width: $mobile) {
+    @media only screen and (max-width: $desktopSmall) {
       display: block;
     }
 
@@ -108,6 +123,7 @@
       background-color: rgba($color: $neutralBlack, $alpha: 0.85);
       right: 0;
       width: 100%;
+      top: 74px;
       display: flex;
       flex-direction: column;
 

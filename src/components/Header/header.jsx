@@ -11,14 +11,29 @@ const Header = ({ activeID }) => {
     <header className="page-header">
       <div className=" flex-container">
         <div className="logo">
-          <StaticImage
-            className=""
-            src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654580565/Upzyde/log2_dromlw.webp"
-            alt="Upzyde"
-            title="Upzyde"
-            placeholder="none"
-            loading="eager"
-          />
+          {activeID === "homepage" ? (
+            <div className="home-logo">
+              <StaticImage
+                className=""
+                src="https://res.cloudinary.com/dqove2qhg/image/upload/v1655212868/Upzyde/log1_uss6nr.png"
+                alt="Upzyde"
+                title="Upzyde"
+                placeholder="none"
+                loading="eager"
+              />
+            </div>
+          ) : (
+            <div className="other-logo">
+              <StaticImage
+                className=""
+                src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654580565/Upzyde/log2_dromlw.webp"
+                alt="Upzyde"
+                title="Upzyde"
+                placeholder="none"
+                loading="eager"
+              />
+            </div>
+          )}
         </div>
 
         <div className="divider"></div>

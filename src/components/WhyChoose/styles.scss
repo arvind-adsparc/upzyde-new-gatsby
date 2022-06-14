@@ -22,6 +22,14 @@
       line-height: 35px;
     }
 
+    @media only screen and (max-width: $mobile) {
+      font-size: 1.3rem;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      text-align: center;
+    }
+
     span {
       display: block;
     }
@@ -33,6 +41,11 @@
     flex-wrap: wrap;
     gap: 1rem;
 
+    @media only screen and (max-width: $mobile) {
+      column: 5rem;
+      justify-content: center;
+    }
+
     .card {
       background-image: url(https://res.cloudinary.com/dqove2qhg/image/upload/v1654846646/Upzyde/why_choose_upzyde_bg-icon-bg_1_ctdeqg.webp);
       background-repeat: no-repeat;
@@ -41,6 +54,18 @@
       width: 30%;
       padding: 1rem;
       padding-top: 2rem;
+
+      @media only screen and (max-width: $mobile) {
+        width: 35%;
+      }
+
+      @media only screen and (max-width: $mobileMedium) {
+        width: 60%;
+      }
+
+      @media only screen and (max-width: $mobileSmall) {
+        width: 100%;
+      }
 
       .card-txt {
         margin-top: $margin1x;

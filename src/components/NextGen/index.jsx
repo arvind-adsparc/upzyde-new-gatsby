@@ -37,7 +37,7 @@ const NextGen = () => {
 
         <div className="vr-headset">
           <StaticImage
-            src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654867352/Upzyde/moving_icon-1_1_sxmobw.webp"
+            src="https://res.cloudinary.com/dqove2qhg/image/upload/v1655193543/Upzyde/moving_icon-1_bmbv7a.webp"
             alt=""
             placeholder="none"
             width={180}
@@ -46,7 +46,7 @@ const NextGen = () => {
 
         <div className="triangle">
           <StaticImage
-            src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654867690/Upzyde/moving_icon-4_kaooyu.webp"
+            src="https://res.cloudinary.com/dqove2qhg/image/upload/v1655193590/Upzyde/moving_icon-4_qcpfcw.webp"
             alt=""
             placeholder="none"
             width={180}
@@ -64,7 +64,7 @@ const NextGen = () => {
 
         <div className="controller">
           <StaticImage
-            src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654867874/Upzyde/moving_icon-3_1_io6wqk.webp"
+            src="https://res.cloudinary.com/dqove2qhg/image/upload/v1655193589/Upzyde/moving_icon-3_rvmgiq.webp"
             alt=""
             placeholder="none"
             width={180}

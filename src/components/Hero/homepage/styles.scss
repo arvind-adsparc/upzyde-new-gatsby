@@ -19,7 +19,7 @@
 
       background: linear-gradient(
         to right,
-        rgb(25, 149, 173, 0.9) 0%,
+        rgb(25, 149, 173, 0.8) 0%,
         rgba(255, 255, 255, 0) 80%,
         rgb(25, 149, 173, 0.9) 100%
       );
@@ -62,7 +62,7 @@
       text-transform: uppercase;
       color: $neutralWhite;
       font-weight: bold;
-      line-height: 35px;
+      line-height: 40px;
 
       @media only screen and (min-width: $desktopLarge) {
         font-size: 3.5rem;
@@ -71,9 +71,10 @@
     }
 
     p {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       color: $neutralWhite;
       line-height: 25px;
+      font-weight: 500;
       @media only screen and (min-width: $desktopLarge) {
         font-size: 1.7rem;
         line-height: 35px;

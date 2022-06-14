@@ -1,6 +1,8 @@
 import React from "react";
+
 import { StaticImage } from "gatsby-plugin-image";
 import "./styles.scss";
+import { Link } from "gatsby";
 
 const NextGen = () => {
   return (
@@ -30,7 +32,9 @@ const NextGen = () => {
             </p>
 
             <div className="cta">
-              <button className="btn">Start Monetizing</button>
+              <Link to="/contact-us">
+                <button className="btn">Start Monetizing</button>
+              </Link>
             </div>
           </div>
         </div>

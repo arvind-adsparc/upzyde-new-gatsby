@@ -16,6 +16,11 @@
     background-size: cover;
     color: $neutralWhite;
 
+    @media only screen and (max-width: $desktopSmall) {
+      background-position: 70%;
+      padding: 4rem 0;
+    }
+
     h2 {
       font-size: 1.7rem;
       text-transform: uppercase;
@@ -23,11 +28,19 @@
         font-size: 2rem;
         line-height: 35px;
       }
+
+      @media only screen and (max-width: $desktopSmall) {
+        font-size: 1.5rem;
+      }
     }
 
     p {
+      font-size: 1rem;
       @media only screen and (min-width: $desktopLarge) {
         font-size: 1.5rem;
+      }
+      @media only screen and (max-width: $desktopSmall) {
+        font-size: 0.9rem;
       }
       span {
         display: block;
@@ -38,8 +51,13 @@
       margin-top: $margin2x;
       .btn {
         color: $neutralBlack;
+        font-size: 1rem;
         @media only screen and (min-width: $desktopLarge) {
           font-size: 1.3rem;
+        }
+
+        @media only screen and (max-width: $desktopSmall) {
+          font-size: 0.8rem;
         }
       }
     }

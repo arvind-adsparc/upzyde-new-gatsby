@@ -11,7 +11,7 @@ const IncreaseRevenueForm = () => {
     console.log("Failed:", errorInfo);
   };
   return (
-    <section className="revenueForm-container">
+    <section className="revenueForm-container ">
       <Form
         name="revenue-form"
         onFinish={onFinish}

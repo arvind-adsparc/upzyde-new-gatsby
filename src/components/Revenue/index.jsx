@@ -5,7 +5,7 @@ import "./styles.scss";
 
 const Revenue = () => {
   return (
-    <section className="revenue-container inner-container">
+    <section className="revenue-container inner-container request-demo">
       <div className="form-container">
         {/* <StaticImage
           src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654507449/Upzyde/increase_your_revenue_1_wox80x.webp"

@@ -8,8 +8,9 @@ const Ecosystem = () => {
       <h2>Ecosystem</h2>
 
       <StaticImage
-        src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654843326/Upzyde/ecosystem_1_rrjdgv.webp"
+        // src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654843326/Upzyde/ecosystem_1_rrjdgv.webp"
         alt=""
+        src="https://res.cloudinary.com/dqove2qhg/image/upload/v1655210615/Upzyde/ecosystem_y7j1nl.png"
         placeholder="none"
         width={800}
         // height={350}

@@ -5,11 +5,12 @@
   background-image: url(https://res.cloudinary.com/dqove2qhg/image/upload/v1654844660/Upzyde/why_choose_upzyde_bg_1_aufhif.webp);
   background-position: top;
   background-repeat: no-repeat;
-  background-size: 100% 58%;
+  background-size: 100vw 60vh;
 
   @media only screen and (min-width: $desktopLarge) {
     padding: 6rem 0;
-    // background-size: 100% 50%;
+    // background-size: 100% 50vh;
+    background-size: 100vw 38vh;
   }
 
   h2 {

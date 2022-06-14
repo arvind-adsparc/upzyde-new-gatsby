@@ -10,7 +10,8 @@ const OneSolution = () => {
       <div className="content">
         <div className="card">
           <StaticImage
-            src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654842788/Upzyde/one_solution-icon-1_zociqr.webp"
+            // src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654842788/Upzyde/one_solution-icon-1_zociqr.webp"
+            src="https://res.cloudinary.com/dqove2qhg/image/upload/v1655212342/Upzyde/one_solution-icon-1_1_ja8zsh.png"
             alt=""
             placeholder="none"
             width={120}
@@ -22,7 +23,8 @@ const OneSolution = () => {
 
         <div className="card">
           <StaticImage
-            src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654842786/Upzyde/one_solution-icon-2_tz8afh.webp"
+            // src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654842786/Upzyde/one_solution-icon-2_tz8afh.webp"
+            src="https://res.cloudinary.com/dqove2qhg/image/upload/v1655212341/Upzyde/one_solution-icon-2_wtzk4m.png"
             alt=""
             placeholder="none"
             width={120}
@@ -33,7 +35,8 @@ const OneSolution = () => {
 
         <div className="card">
           <StaticImage
-            src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654842785/Upzyde/one_solution-icon-3_k5f5qa.webp"
+            // src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654842785/Upzyde/one_solution-icon-3_k5f5qa.webp"
+            src="https://res.cloudinary.com/dqove2qhg/image/upload/v1655212340/Upzyde/one_solution-icon-3_oaifoi.png"
             alt=""
             placeholder="none"
             width={120}

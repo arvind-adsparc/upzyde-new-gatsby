@@ -1,11 +1,11 @@
 @import "../../styles/variables.scss";
 
 .footer-section {
-  //   for testing
   height: 50rem;
-  /////
 
-  background-image: url(https://res.cloudinary.com/dqove2qhg/image/upload/v1654413698/Upzyde/footer-1_1_zpvmbi.webp);
+  // background-image: url(https://res.cloudinary.com/dqove2qhg/image/upload/v1654413698/Upzyde/footer-1_1_zpvmbi.webp);
+
+  background-image: url(https://res.cloudinary.com/dqove2qhg/image/upload/v1655212030/Upzyde/footer-1_gmw5z4.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100% 50rem;
@@ -30,6 +30,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 100%;
     // align-items: center;
 
     & > div {
@@ -39,23 +40,34 @@
     }
     @media only screen and (max-width: $mobileMedium) {
       display: grid;
-      grid-template-columns: repeat(6, 1fr);
+      grid-template-columns: repeat(12, 1fr);
       grid-template-rows: repeat(2, 1fr);
       gap: 1rem;
     }
 
     .form {
       @media only screen and (max-width: $mobileMedium) {
-        grid-column: 1 / span 6;
+        grid-column: 1 / -1;
         grid-row: 1;
       }
     }
 
+    .mail-us {
+      @media only screen and (max-width: $mobileMedium) {
+        grid-row: 2;
+        grid-column: 1 / span 3;
+      }
+    }
+
     .follow-us {
-      width: 12%;
+      // width: 12%;
+      width: 7rem;
 
       @media only screen and (max-width: $mobileMedium) {
-        grid-column: 6;
+        grid-column: 12;
+        grid-row: 2;
+
+        width: 6rem;
       }
     }
     h3 {
@@ -109,8 +121,21 @@
     align-items: center;
     color: $neutralWhite;
 
+    @media only screen and (max-width: $mobileMedium) {
+      flex-direction: column;
+    }
+
     .links {
       width: 35%;
+
+      @media only screen and (max-width: $mobile) {
+        width: 50%;
+      }
+
+      @media only screen and (max-width: $mobileMedium) {
+        margin-top: $margin2x;
+        width: 100%;
+      }
 
       .link-head {
         font-weight: $bold;
@@ -152,5 +177,9 @@
     display: flex;
     align-items: center;
     letter-spacing: 1.5px;
+
+    @media only screen and (max-width: $mobileMedium) {
+      font-size: 0.7rem;
+    }
   }
 }

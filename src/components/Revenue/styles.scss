@@ -4,6 +4,10 @@
   padding: $sectionSpacing 0;
   text-align: center;
 
+  @media only screen and (max-width: $desktopSmall) {
+    padding: 2rem 0;
+  }
+
   .form-container {
     margin: $margin3x 0;
     position: relative;
@@ -21,6 +25,15 @@
       padding: 3rem;
     }
 
+    @media only screen and (max-width: $desktopSmall) {
+      background-size: 100% 100%;
+    }
+
+    @media only screen and (max-width: $mobileMedium) {
+      padding: 1.5rem;
+      margin: 1rem 0;
+    }
+
     .form-content {
       //   position: absolute;
 
@@ -28,6 +41,10 @@
         font-size: $sectionTitle;
         @media only screen and (min-width: $desktopLarge) {
           font-size: 2rem;
+        }
+
+        @media only screen and (max-width: $desktopSmall) {
+          font-size: 1.3rem;
         }
 
         .sentence-break {
@@ -40,6 +57,18 @@
 
         @media only screen and (min-width: $desktopLarge) {
           font-size: 1.5rem;
+        }
+
+        @media only screen and (max-width: $desktopSmall) {
+          font-size: 1rem;
+        }
+      }
+
+      .cta {
+        .btn {
+          @media only screen and (max-width: $desktopSmall) {
+            font-size: 0.8rem;
+          }
         }
       }
     }

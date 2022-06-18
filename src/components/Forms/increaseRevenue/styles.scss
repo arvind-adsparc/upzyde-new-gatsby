@@ -8,6 +8,14 @@
     width: 30rem;
   }
 
+  @media only screen and (max-width: $desktopSmall) {
+    width: 30rem;
+  }
+
+  @media only screen and (max-width: $mobileMedium) {
+    width: 90%;
+  }
+
   input {
     border-radius: 20px;
     background: transparent;

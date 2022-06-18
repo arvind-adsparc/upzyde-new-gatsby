@@ -17,11 +17,18 @@
     // justify-content: center;
     // align-items: center;
 
+    @media only screen and (min-width: $desktopLarge) {
+      padding: 3rem;
+    }
+
     .form-content {
       //   position: absolute;
 
       h2 {
         font-size: $sectionTitle;
+        @media only screen and (min-width: $desktopLarge) {
+          font-size: 2rem;
+        }
 
         .sentence-break {
           display: block;
@@ -30,6 +37,10 @@
 
       p {
         font-size: $sectionPara;
+
+        @media only screen and (min-width: $desktopLarge) {
+          font-size: 1.5rem;
+        }
       }
     }
   }

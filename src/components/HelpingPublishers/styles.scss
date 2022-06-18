@@ -13,6 +13,10 @@
     // text-align: center;
     margin: 0 auto;
 
+    @media only screen and (min-width: $desktopLarge) {
+      font-size: 2rem;
+    }
+
     .sentence-break {
       display: block;
     }
@@ -34,17 +38,26 @@
     background-size: contain;
     background-repeat: no-repeat, repeat;
     background-position: center;
+    @media only screen and (min-width: $desktopLarge) {
+      background-size: 100% 100%;
+    }
 
     &-title {
       font-weight: $bold;
       font-size: 1rem;
       margin-bottom: $margin1x;
       text-transform: uppercase;
+      @media only screen and (min-width: $desktopLarge) {
+        font-size: 1.5rem;
+      }
     }
 
     &-description {
       font-weight: $regular;
       font-size: 0.8rem;
+      @media only screen and (min-width: $desktopLarge) {
+        font-size: 1.1rem;
+      }
     }
   }
 
@@ -58,10 +71,18 @@
   .prev-arrow {
     left: 15%;
     bottom: 45%;
+    @media only screen and (min-width: $desktopLarge) {
+      bottom: 55%;
+      left: 20%;
+    }
   }
 
   .next-arrow {
     right: 15%;
     bottom: 45%;
+    @media only screen and (min-width: $desktopLarge) {
+      bottom: 55%;
+      right: 20%;
+    }
   }
 }

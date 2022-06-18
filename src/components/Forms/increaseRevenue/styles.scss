@@ -4,15 +4,30 @@
   width: 20rem;
   margin: $margin2x auto;
 
+  @media only screen and (min-width: $desktopLarge) {
+    width: 30rem;
+  }
+
   input {
     border-radius: 20px;
     background: transparent;
     outline: none;
+    @media only screen and (min-width: $desktopLarge) {
+      font-size: 1.5rem;
+    }
   }
 
   .ant-form-item-explain-error {
     color: $neutralWhite;
     margin: $margin1x 0;
     text-align: initial;
+  }
+
+  .cta {
+    .btn {
+      @media only screen and (min-width: $desktopLarge) {
+        font-size: 1.5rem;
+      }
+    }
   }
 }

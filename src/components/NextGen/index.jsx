@@ -41,7 +41,8 @@ const NextGen = () => {
 
         <div className="vr-headset">
           <StaticImage
-            src="https://res.cloudinary.com/dqove2qhg/image/upload/v1655193543/Upzyde/moving_icon-1_bmbv7a.webp"
+            src="https://res.cloudinary.com/dqove2qhg/image/upload/v1655536580/Upzyde/moving_icon-1_1_uycmuv.webp"
+            // src="https://res.cloudinary.com/dqove2qhg/image/upload/v1655193543/Upzyde/moving_icon-1_bmbv7a.webp"
             alt=""
             placeholder="none"
             width={180}
@@ -59,7 +60,8 @@ const NextGen = () => {
 
         <div className="plus">
           <StaticImage
-            src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654868051/Upzyde/moving_icon-2_hjodjh.webp"
+            src="https://res.cloudinary.com/dqove2qhg/image/upload/v1655536408/Upzyde/moving_icon-2_bi3dl8.webp"
+            // src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654868051/Upzyde/moving_icon-2_hjodjh.webp"
             alt=""
             placeholder="none"
             width={80}
@@ -68,7 +70,8 @@ const NextGen = () => {
 
         <div className="controller">
           <StaticImage
-            src="https://res.cloudinary.com/dqove2qhg/image/upload/v1655193589/Upzyde/moving_icon-3_rvmgiq.webp"
+            src="https://res.cloudinary.com/dqove2qhg/image/upload/v1655536508/Upzyde/moving_icon-3_1_ai2da5.webp"
+            // src="https://res.cloudinary.com/dqove2qhg/image/upload/v1655193589/Upzyde/moving_icon-3_rvmgiq.webp"
             alt=""
             placeholder="none"
             width={180}

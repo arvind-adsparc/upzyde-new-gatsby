@@ -10,6 +10,7 @@ const VideoAdHero = () => {
           src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654495670/Upzyde/in_game-1_banner-1_1_vydfe2.webp"
           alt=""
           placeholder="none"
+          objectFit="fill"
         />
       </div>
 

@@ -47,6 +47,11 @@
           font-size: 1.3rem;
         }
 
+        @media only screen and (max-width: $mobile) {
+          font-size: 1.1rem;
+          line-height: 25px;
+        }
+
         .sentence-break {
           display: block;
         }
@@ -61,6 +66,10 @@
 
         @media only screen and (max-width: $desktopSmall) {
           font-size: 1rem;
+        }
+
+        @media only screen and (max-width: $mobile) {
+          font-size: 0.8rem;
         }
       }
 

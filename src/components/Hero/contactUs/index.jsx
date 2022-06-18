@@ -7,12 +7,11 @@ const ContactUsHero = () => {
     <section className="contactus-hero">
       <div className="hero-image">
         <StaticImage
-          src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654494853/Upzyde/contact_us-1_banner1_-_1_ycqajx.webp"
+          src="https://res.cloudinary.com/dqove2qhg/image/upload/v1655541992/Upzyde/contact_us-1_banner1_-_1_nh9asx.png"
           alt=""
           placeholder="none"
           layout="fullWidth"
           loading="eager"
-          objectFit="fill"
         />
       </div>
     </section>

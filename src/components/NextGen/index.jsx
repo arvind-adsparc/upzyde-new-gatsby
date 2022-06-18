@@ -39,7 +39,7 @@ const NextGen = () => {
           </div>
         </div>
 
-        <div className="vr-headset">
+        <div className="vr-headset icons">
           <StaticImage
             src="https://res.cloudinary.com/dqove2qhg/image/upload/v1655536580/Upzyde/moving_icon-1_1_uycmuv.webp"
             // src="https://res.cloudinary.com/dqove2qhg/image/upload/v1655193543/Upzyde/moving_icon-1_bmbv7a.webp"
@@ -49,7 +49,7 @@ const NextGen = () => {
           />
         </div>
 
-        <div className="triangle">
+        <div className="triangle icons">
           <StaticImage
             src="https://res.cloudinary.com/dqove2qhg/image/upload/v1655193590/Upzyde/moving_icon-4_qcpfcw.webp"
             alt=""
@@ -58,7 +58,7 @@ const NextGen = () => {
           />
         </div>
 
-        <div className="plus">
+        <div className="plus icons">
           <StaticImage
             src="https://res.cloudinary.com/dqove2qhg/image/upload/v1655536408/Upzyde/moving_icon-2_bi3dl8.webp"
             // src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654868051/Upzyde/moving_icon-2_hjodjh.webp"
@@ -68,7 +68,7 @@ const NextGen = () => {
           />
         </div>
 
-        <div className="controller">
+        <div className="controller icons">
           <StaticImage
             src="https://res.cloudinary.com/dqove2qhg/image/upload/v1655536508/Upzyde/moving_icon-3_1_ai2da5.webp"
             // src="https://res.cloudinary.com/dqove2qhg/image/upload/v1655193589/Upzyde/moving_icon-3_rvmgiq.webp"

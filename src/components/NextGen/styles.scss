@@ -110,6 +110,12 @@
       }
     }
 
+    .icons {
+      @media only screen and (max-width: $mobileMedium) {
+        display: none;
+      }
+    }
+
     .controller {
       position: absolute;
       bottom: -15%;

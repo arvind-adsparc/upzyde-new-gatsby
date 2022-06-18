@@ -63,6 +63,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media only screen and (max-width: $mobileMedium) {
+      flex-direction: column-reverse;
+    }
   }
 
   .content-txt {
@@ -75,6 +79,11 @@
     @media only screen and (max-width: $mobile) {
       width: 45%;
     }
+
+    @media only screen and (max-width: $mobileMedium) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   .content-images {
@@ -83,6 +92,11 @@
     align-items: center;
     @media only screen and (max-width: $mobile) {
       width: 45%;
+    }
+
+    @media only screen and (max-width: $mobileMedium) {
+      width: 100%;
+      justify-content: center;
     }
   }
 }

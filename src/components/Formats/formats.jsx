@@ -39,9 +39,11 @@ const Formats = () => {
 
           <div className="content-images">
             <StaticImage
-              src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654151197/Upzyde/Group_1_ota528.webp"
+              // src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654151197/Upzyde/Group_1_ota528.webp"
+              src="https://res.cloudinary.com/dqove2qhg/image/upload/v1655538377/Upzyde/ad_format-11_mdezli.png"
               alt=""
               placeholder="none"
+              width={400}
             />
           </div>
         </div>

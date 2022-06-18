@@ -52,6 +52,20 @@
     }
   }
 
+  .slider-desktop {
+    @media only screen and (max-width: $mobileMedium) {
+      display: none;
+    }
+  }
+
+  .slider-mobile {
+    display: none;
+
+    @media only screen and (max-width: $mobileMedium) {
+      display: block;
+    }
+  }
+
   .ant-carousel {
     width: 600px;
     margin: $margin1x auto;
@@ -64,6 +78,10 @@
     @media only screen and (max-width: $mobile) {
       width: 500px;
     }
+
+    @media only screen and (max-width: $mobileMedium) {
+      width: 100%;
+    }
   }
 
   .slider {
@@ -74,6 +92,11 @@
     background-position: center;
     @media only screen and (min-width: $desktopLarge) {
       background-size: 100% 100%;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      padding: 3rem;
+      margin-bottom: 2rem;
     }
 
     &-title {

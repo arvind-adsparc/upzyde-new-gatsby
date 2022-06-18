@@ -1,3 +1,5 @@
+@import "../../styles/variables.scss";
+
 .scroll-container {
   position: relative;
 }
@@ -9,6 +11,10 @@
   left: 52%;
   font-weight: bold;
   //   transform: translate(20%, -%);
+
+  @media only screen and (max-width: $mobileMedium) {
+    display: none;
+  }
 }
 
 .scroll-down {
@@ -22,6 +28,10 @@
   right: 0;
   width: 20px;
   cursor: pointer;
+
+  @media only screen and (max-width: $mobileMedium) {
+    bottom: 20px;
+  }
 }
 .scroll-down::before {
   animation: scrollDownAnimation 2s infinite;

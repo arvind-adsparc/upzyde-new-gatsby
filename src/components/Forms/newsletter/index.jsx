@@ -1,10 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import { Form, Input } from "antd";
+import { API_URL } from "../../../utlis/apiURL";
 import "./styles.scss";
 
 const Newsletter = () => {
-  const onFinish = (values) => {
+  const [loading, setLoading] = useState(false);
+  const onFinish = async (values) => {
     console.log("Success:", values);
+
+    setLoading(true);
+
+    try {
+      const data = {
+        email: values.email,
+        formName: "newsletter form",
+        page: "homepage",
+      };
+      const res = await axios.post(`${API_URL}/submission`, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+        data,
+      });
+
+      console.log("success", res);
+
+      setLoading(false);
+    } catch (err) {
+      setLoading(false);
+      console.log("err", err);
+    }
   };
 
   const onFinishFailed = (errorInfo) => {

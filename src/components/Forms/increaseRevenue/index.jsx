@@ -26,14 +26,14 @@ const IncreaseRevenueForm = () => {
     try {
       const data = {
         email: values.email,
-        formName: "revenue form",
+        formName: "Increase Revenue",
         page: "In Game Ads - Video",
       };
 
       const headers = {
         "Content-Type": "application/json",
       };
-      const res = await axios.post(`${API_URL}/submission`, data, { headers });
+      await axios.post(`${API_URL}/submission`, data, { headers });
 
       setLoading(false);
       setStatus("success");

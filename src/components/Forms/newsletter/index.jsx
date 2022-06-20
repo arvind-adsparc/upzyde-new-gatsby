@@ -26,14 +26,14 @@ const Newsletter = () => {
     try {
       const data = {
         email: values.email,
-        formName: "newsletter form",
+        formName: "Newsletter",
         page: "homepage",
       };
 
       const headers = {
         "Content-Type": "application/json",
       };
-      const res = await axios.post(`${API_URL}/submission`, data, { headers });
+      await axios.post(`${API_URL}/submission`, data, { headers });
 
       setLoading(false);
       setStatus("success");

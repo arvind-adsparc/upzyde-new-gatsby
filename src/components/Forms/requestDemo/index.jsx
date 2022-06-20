@@ -31,13 +31,14 @@ const RequestDemoForm = () => {
         lastName: values.lastName,
         email: values.email,
         format: values.format,
+        formName: "Request Demo",
         page: "NA",
       };
 
       const headers = {
         "Content-Type": "application/json",
       };
-      const res = await axios.post(`${API_URL}/request-demo`, data, {
+      await axios.post(`${API_URL}/request-demo`, data, {
         headers,
       });
 

@@ -31,7 +31,7 @@ const RequestDemoForm = () => {
         lastName: values.lastName,
         email: values.email,
         format: values.format,
-        page: "Advertisers Page",
+        page: "NA",
       };
 
       const headers = {

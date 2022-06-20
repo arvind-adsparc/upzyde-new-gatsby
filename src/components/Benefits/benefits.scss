@@ -42,6 +42,10 @@
     }
   }
 
+  .inner-container {
+    max-width: 1000px;
+  }
+
   .content-container {
     display: grid;
     grid-auto-rows: 1fr;

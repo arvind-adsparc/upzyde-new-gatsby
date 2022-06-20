@@ -2,7 +2,8 @@
 
 .videoAd-hero {
   height: 70vh;
-  width: 100vw;
+  width: 100%;
+
   position: relative;
   @media only screen and (max-width: $mobile) {
     height: 50vh;

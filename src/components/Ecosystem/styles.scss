@@ -22,6 +22,11 @@
     }
   }
 
+  .image-div {
+    width: 60rem;
+    margin: 0 auto;
+  }
+
   .gatsby-image-wrapper {
     @media only screen and (min-width: $desktopLarge) {
       // width: 100%;

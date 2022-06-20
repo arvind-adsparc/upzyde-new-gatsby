@@ -23,8 +23,12 @@
   }
 
   .image-div {
-    width: 60rem;
+    width: 80%;
     margin: 0 auto;
+
+    @media only screen and (max-width: $mobile) {
+      width: 90%;
+    }
   }
 
   .gatsby-image-wrapper {

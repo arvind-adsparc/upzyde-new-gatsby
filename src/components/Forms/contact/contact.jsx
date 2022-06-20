@@ -1,10 +1,56 @@
-import React from "react";
-import { Form, Input, Radio } from "antd";
+import React, { useState } from "react";
+import axios from "axios";
+import { Form, Input, Radio, Spin } from "antd";
+import { LoadingOutlined } from "@ant-design/icons";
+import { API_URL } from "../../../utlis/apiURL";
 import "./styles.scss";
 
+const antIcon = (
+  <LoadingOutlined
+    style={{
+      fontSize: 24,
+    }}
+    spin
+  />
+);
+
 const ContactForm = () => {
-  const onFinish = (values) => {
+  const [form] = Form.useForm();
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState("");
+  const onFinish = async (values) => {
     console.log("Success:", values);
+
+    setLoading(true);
+
+    try {
+      const data = {
+        firstName: values.firstName,
+        lastName: values.lastName,
+        company: values.companyName,
+        email: values.email,
+        companyType: values.companyType,
+        message: values.message,
+        formName: "Contact Us",
+        format: "test",
+        page: "NA",
+      };
+
+      const headers = {
+        "Content-Type": "application/json",
+      };
+      const res = await axios.post(`${API_URL}/request-demo`, data, {
+        headers,
+      });
+
+      setLoading(false);
+      setStatus("success");
+      form.resetFields();
+    } catch (err) {
+      setLoading(false);
+      setStatus("error");
+      console.log("err", err);
+    }
   };
 
   const onFinishFailed = (errorInfo) => {
@@ -13,10 +59,15 @@ const ContactForm = () => {
 
   return (
     <section className="contactForm-container">
-      <Form name="" onFinish={onFinish} onFinishFailed={onFinishFailed}>
+      <Form
+        form={form}
+        name=""
+        onFinish={onFinish}
+        onFinishFailed={onFinishFailed}
+      >
         <div className="form-group">
           <Form.Item
-            name="first-name"
+            name="firstName"
             label="First Name"
             rules={[
               {
@@ -24,12 +75,14 @@ const ContactForm = () => {
                 message: "Please input your first name!",
               },
             ]}
+            hasFeedback
+            validateStatus={status}
           >
             <Input />
           </Form.Item>
 
           <Form.Item
-            name="last-name"
+            name="lastName"
             label="Last Name"
             rules={[
               {
@@ -37,13 +90,15 @@ const ContactForm = () => {
                 message: "Please input your last name!",
               },
             ]}
+            hasFeedback
+            validateStatus={status}
           >
             <Input />
           </Form.Item>
         </div>
         <div className="form-group">
           <Form.Item
-            name="comp-name"
+            name="companyName"
             label="Company Name"
             rules={[
               {
@@ -51,6 +106,8 @@ const ContactForm = () => {
                 message: "Please input your company name!",
               },
             ]}
+            hasFeedback
+            validateStatus={status}
           >
             <Input />
           </Form.Item>
@@ -62,15 +119,18 @@ const ContactForm = () => {
               {
                 required: true,
                 message: "Please input your email!",
+                type: "email",
               },
             ]}
+            hasFeedback
+            validateStatus={status}
           >
             <Input />
           </Form.Item>
         </div>
 
         <Form.Item
-          name="company-type"
+          name="companyType"
           label="Company Type"
           rules={[
             {
@@ -78,6 +138,8 @@ const ContactForm = () => {
               message: "Please input select a companty type!",
             },
           ]}
+          hasFeedback
+          validateStatus={status}
         >
           <Radio.Group>
             <div className="radio-group">
@@ -99,13 +161,19 @@ const ContactForm = () => {
               required: false,
             },
           ]}
+          hasFeedback
+          validateStatus={status}
         >
           <Input.TextArea rows={4} showCount maxLength={200} />
         </Form.Item>
 
         <Form.Item>
           <div className="cta">
-            <button className="btn">Send</button>
+            {loading ? (
+              <Spin indicator={antIcon} />
+            ) : (
+              <button className="btn">Send</button>
+            )}
           </div>
         </Form.Item>
       </Form>

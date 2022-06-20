@@ -13,7 +13,7 @@ import Formats from "../../components/Formats/formats";
 import RequestDemoForm from "../../components/Forms/requestDemo";
 import Seo from "../../components/Seo/seo";
 
-const Developers = () => {
+const Developers = (props) => {
   return (
     <Layout page="developers">
       <Seo
@@ -27,7 +27,7 @@ const Developers = () => {
       <Benefits {...benefitsData} />
       <Formats />
       <Partners heading="Trusted Partners" />
-      <RequestDemoForm />
+      <RequestDemoForm page={props.location.pathname} />
     </Layout>
   );
 };

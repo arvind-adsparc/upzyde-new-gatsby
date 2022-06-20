@@ -13,7 +13,7 @@ import Benefits from "../../components/Benefits/benefits";
 import Seo from "../../components/Seo/seo";
 import Formats from "../../components/Formats/formats";
 
-const Advertisers = () => {
+const Advertisers = (props) => {
   return (
     <Layout page="advertisers">
       <Seo
@@ -27,7 +27,7 @@ const Advertisers = () => {
       <Benefits {...benefitsData} />
       <Formats />
       <Partners heading="Trusted Partners" />
-      <RequestDemoForm />
+      <RequestDemoForm page={props.location.pathname} />
     </Layout>
   );
 };

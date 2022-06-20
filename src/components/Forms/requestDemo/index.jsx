@@ -16,7 +16,10 @@ const antIcon = (
   />
 );
 
-const RequestDemoForm = () => {
+const RequestDemoForm = ({ page }) => {
+  // const url = typeof window !== "undefined" ? window.location.href : "";
+  // console.log("url", url);
+
   const [form] = Form.useForm();
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState("");
@@ -32,7 +35,7 @@ const RequestDemoForm = () => {
         email: values.email,
         format: values.format,
         formName: "Request Demo",
-        page: "NA",
+        page: page,
       };
 
       const headers = {

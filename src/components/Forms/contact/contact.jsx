@@ -39,7 +39,7 @@ const ContactForm = () => {
       const headers = {
         "Content-Type": "application/json",
       };
-      const res = await axios.post(`${API_URL}/request-demo`, data, {
+      const res = await axios.post(`${API_URL}/contact`, data, {
         headers,
       });
 

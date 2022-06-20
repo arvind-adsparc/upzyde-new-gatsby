@@ -1,5 +1,5 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+// import { StaticImage } from "gatsby-plugin-image";
 import "./styles.scss";
 
 const Ecosystem = () => {
@@ -12,6 +12,7 @@ const Ecosystem = () => {
           src="https://res.cloudinary.com/dqove2qhg/image/upload/v1655709768/Upzyde/ecosystem_sqbazq.webp"
           alt=""
           placeholder="none"
+          loading="lazy"
           // width={800}
         />
       </div>

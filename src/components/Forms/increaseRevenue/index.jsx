@@ -26,7 +26,7 @@ const IncreaseRevenueForm = () => {
     try {
       const data = {
         email: values.email,
-        formName: "Increase Revenue",
+        formName: "revenue",
         page: "In Game Ads - Video",
       };
 

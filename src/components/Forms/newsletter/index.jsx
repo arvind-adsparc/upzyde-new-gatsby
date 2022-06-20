@@ -26,7 +26,7 @@ const Newsletter = ({ page }) => {
     try {
       const data = {
         email: values.email,
-        formName: "Newsletter",
+        formName: "newsletter",
         page: page,
       };
 

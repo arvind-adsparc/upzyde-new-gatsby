@@ -64,12 +64,13 @@ const Newsletter = () => {
               {
                 required: true,
                 message: "Please input your email!",
+                type: "email",
               },
             ]}
             hasFeedback
             validateStatus={status}
           >
-            <Input allowClear placeholder="Email" />
+            <Input placeholder="Email" />
           </Form.Item>
 
           <Form.Item>

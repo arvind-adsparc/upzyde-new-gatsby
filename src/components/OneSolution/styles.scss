@@ -67,6 +67,13 @@
     }
 
     .card {
+      img {
+        width: 60%;
+
+        @media only screen and (min-width: $desktopLarge) {
+          width: 80%;
+        }
+      }
       .card-txt {
         text-transform: uppercase;
         font-weight: bold;

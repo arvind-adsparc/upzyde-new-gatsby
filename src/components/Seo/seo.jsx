@@ -16,6 +16,12 @@ const Seo = ({ url, title, description }) => {
       <meta property="og:title" content={title} />
       <meta property="og:type" content="website" />
       <meta property="og:description" content={description} />
+      <link
+        rel="shortcut icon"
+        href="https://res.cloudinary.com/dqove2qhg/image/upload/v1655716070/Upzyde/icon-ico_ze5rl6.png"
+        type="image/x-icon"
+      />
+
       <link rel="canonical" href={url} />
     </Helmet>
   );

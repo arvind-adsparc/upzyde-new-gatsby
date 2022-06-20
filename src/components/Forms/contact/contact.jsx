@@ -33,7 +33,7 @@ const ContactForm = () => {
         message: values.message,
         formName: "Contact Us",
         format: "test",
-        page: "NA",
+        page: "contact",
       };
 
       const headers = {

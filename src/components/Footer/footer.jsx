@@ -4,7 +4,7 @@ import Newsletter from "../Forms/newsletter";
 
 import "./footer.scss";
 
-const Footer = () => {
+const Footer = ({ page }) => {
   return (
     <footer className="footer-section">
       <div className="inner-container grid-container">
@@ -21,7 +21,7 @@ const Footer = () => {
 
           <div className="form">
             <h3 className="color-red">Subscribe to Newsletter</h3>
-            <Newsletter />
+            <Newsletter page={page} />
           </div>
 
           <div className="follow-us">

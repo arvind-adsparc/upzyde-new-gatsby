@@ -14,7 +14,7 @@ const antIcon = (
   />
 );
 
-const Newsletter = () => {
+const Newsletter = ({ page }) => {
   const [form] = Form.useForm();
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState("");
@@ -27,7 +27,7 @@ const Newsletter = () => {
       const data = {
         email: values.email,
         formName: "Newsletter",
-        page: "homepage",
+        page: page,
       };
 
       const headers = {

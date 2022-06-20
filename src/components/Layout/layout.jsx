@@ -8,7 +8,7 @@ const Layout = ({ children, page }) => {
     <div className="page-layout">
       <Header activeID={page} />
       <div className="page-content">{children}</div>
-      <Footer />
+      <Footer page={page} />
     </div>
   );
 };

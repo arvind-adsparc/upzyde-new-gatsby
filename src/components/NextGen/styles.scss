@@ -70,14 +70,15 @@
 
     .vr-headset {
       position: absolute;
-      top: -15%;
+      top: -10%;
       left: -10%;
+      width: 20%;
       @media only screen and (min-width: $desktopLarge) {
-        width: 15rem;
+        // width: 15rem;
       }
 
       @media only screen and (max-width: $mobile) {
-        width: 8rem;
+        // width: 8rem;
         left: -8%;
       }
     }
@@ -104,12 +105,13 @@
       position: absolute;
       top: 0;
       right: 0;
+      width: 10%;
       @media only screen and (min-width: $desktopLarge) {
-        width: 10rem;
+        // width: 10rem;
       }
 
       @media only screen and (max-width: $mobileSmall) {
-        width: 6rem;
+        // width: 6rem;
         // right: 10px;
       }
     }
@@ -124,18 +126,19 @@
       position: absolute;
       bottom: -15%;
       right: -10%;
+      width: 20%;
       @media only screen and (min-width: $desktopLarge) {
-        width: 15rem;
+        // width: 15rem;
+        width: 25%;
       }
 
       @media only screen and (max-width: $mobile) {
-        width: 8rem;
+        // width: 8rem;
         right: -3%;
       }
 
       @media only screen and (max-width: $mobileSmall) {
-        width: 6rem;
-        // right: 10px;
+        // width: 6rem;
       }
     }
 

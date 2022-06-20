@@ -1,13 +1,25 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { Form, Input } from "antd";
+import { Form, Input, Spin } from "antd";
+import { LoadingOutlined } from "@ant-design/icons";
 import { API_URL } from "../../../utlis/apiURL";
 import "./styles.scss";
 
+const antIcon = (
+  <LoadingOutlined
+    style={{
+      fontSize: 24,
+    }}
+    spin
+  />
+);
+
 const Newsletter = () => {
+  const [form] = Form.useForm();
   const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState("");
   const onFinish = async (values) => {
-    console.log("Success:", values);
+    // console.log("Success:", values);
 
     setLoading(true);
 
@@ -23,11 +35,12 @@ const Newsletter = () => {
       };
       const res = await axios.post(`${API_URL}/submission`, data, { headers });
 
-      console.log("success", res);
-
       setLoading(false);
+      setStatus("success");
+      form.resetFields();
     } catch (err) {
       setLoading(false);
+      setStatus("error");
       console.log("err", err);
     }
   };
@@ -38,6 +51,7 @@ const Newsletter = () => {
   return (
     <section className="newsletter-form">
       <Form
+        form={form}
         name="newsletter-form"
         onFinish={onFinish}
         onFinishFailed={onFinishFailed}
@@ -52,13 +66,19 @@ const Newsletter = () => {
                 message: "Please input your email!",
               },
             ]}
+            hasFeedback
+            validateStatus={status}
           >
-            <Input placeholder="Email" />
+            <Input allowClear placeholder="Email" />
           </Form.Item>
 
           <Form.Item>
             <div className="cta">
-              <button className="btn">Submit</button>
+              {loading ? (
+                <Spin indicator={antIcon} />
+              ) : (
+                <button className="btn">Submit</button>
+              )}
             </div>
           </Form.Item>
         </div>

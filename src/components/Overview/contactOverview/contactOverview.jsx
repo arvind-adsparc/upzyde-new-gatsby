@@ -1,4 +1,6 @@
 import React from "react";
+import { StaticImage } from "gatsby-plugin-image";
+
 import ContactForm from "../../Forms/contact/contact";
 import "./styles.scss";
 
@@ -12,6 +14,12 @@ const ConactOverview = () => {
       </div>
 
       <div className="location">
+        <StaticImage
+          className="location-image"
+          src="https://res.cloudinary.com/dqove2qhg/image/upload/v1655724918/Upzyde/dummy_map-1_dhl34l.png"
+          placeholder="none"
+          width={300}
+        />
         <h2>Location</h2>
 
         <div className="txt">

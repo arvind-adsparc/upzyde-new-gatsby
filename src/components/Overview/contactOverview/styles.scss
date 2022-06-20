@@ -35,6 +35,10 @@
     }
   }
 
+  .location-image {
+    margin-bottom: 1rem;
+  }
+
   h2 {
     font-size: $sectionTitle;
     @media only screen and (max-width: $mobile) {

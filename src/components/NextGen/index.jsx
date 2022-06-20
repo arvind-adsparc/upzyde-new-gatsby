@@ -60,7 +60,8 @@ const NextGen = () => {
 
         <div className="plus icons">
           <StaticImage
-            src="https://res.cloudinary.com/dqove2qhg/image/upload/v1655536408/Upzyde/moving_icon-2_bi3dl8.webp"
+            // src="https://res.cloudinary.com/dqove2qhg/image/upload/v1655536408/Upzyde/moving_icon-2_bi3dl8.webp"
+            src="https://res.cloudinary.com/dqove2qhg/image/upload/v1655710004/Upzyde/moving_icon-2_ajnagd.png"
             // src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654868051/Upzyde/moving_icon-2_hjodjh.webp"
             alt=""
             placeholder="none"

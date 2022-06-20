@@ -17,12 +17,11 @@ const Newsletter = () => {
         formName: "newsletter form",
         page: "homepage",
       };
-      const res = await axios.post(`${API_URL}/submission`, {
-        headers: {
-          "Content-Type": "application/json",
-        },
-        data,
-      });
+
+      const headers = {
+        "Content-Type": "application/json",
+      };
+      const res = await axios.post(`${API_URL}/submission`, data, { headers });
 
       console.log("success", res);
 

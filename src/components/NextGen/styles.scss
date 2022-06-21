@@ -185,6 +185,12 @@
           background: transparent;
           border: 1px solid $neutralWhite;
           font-size: 0.7rem;
+
+          &:hover {
+            background-color: $primaryRed;
+            color: white;
+            border: 1px solid $primaryRed;
+          }
           @media only screen and (min-width: $desktopLarge) {
             font-size: 1.3rem;
           }

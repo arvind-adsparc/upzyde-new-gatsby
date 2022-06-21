@@ -31,9 +31,15 @@
     margin-top: $margin1halfx;
     text-align: center;
 
-    button {
-      background-color: $primaryRed;
-      color: $neutralWhite;
+    .btn {
+      color: $neutralBlack;
+      background-color: transparent;
+      border: 1px solid $neutralBlack;
+      &:hover {
+        color: $neutralWhite;
+        background-color: $primaryRed;
+        border: 1px solid $primaryRed;
+      }
     }
   }
 }

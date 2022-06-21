@@ -96,6 +96,15 @@
 
         .btn {
           font-size: 0.7rem;
+          color: $neutralWhite;
+          background-color: transparent;
+          border: 1px solid $neutralWhite;
+
+          &:hover {
+            background-color: $neutralWhite;
+            color: black;
+            border: 1px solid $neutralWhite;
+          }
           @media only screen and (min-width: $desktopLarge) {
             font-size: 1.3rem;
             padding: 1rem 2rem;

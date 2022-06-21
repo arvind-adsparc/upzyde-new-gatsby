@@ -116,9 +116,15 @@
     margin-top: $margin2x;
     text-align: center;
 
-    button {
-      background-color: $primaryRed;
+    .btn {
       color: $neutralWhite;
+      background-color: transparent;
+      border: 1px solid $neutralWhite;
+      &:hover {
+        color: $neutralWhite;
+        background-color: $primaryRed;
+        border: 1px solid $primaryRed;
+      }
     }
   }
 }

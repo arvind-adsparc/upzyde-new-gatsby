@@ -58,8 +58,16 @@
     .cta {
       margin-top: $margin2x;
       .btn {
-        color: $neutralBlack;
+        color: $neutralWhite;
+        background-color: transparent;
         font-size: 1rem;
+        border: 1px solid $neutralWhite;
+
+        &:hover {
+          background-color: $neutralWhite;
+          color: black;
+          border: 1px solid $neutralWhite;
+        }
         @media only screen and (min-width: $desktopLarge) {
           font-size: 1.3rem;
         }

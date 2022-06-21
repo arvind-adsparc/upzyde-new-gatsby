@@ -9,6 +9,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 *:focus {
   outline: none;
 }

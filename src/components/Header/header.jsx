@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 import headerData from "./data";
@@ -50,13 +51,19 @@ const Header = ({ activeID }) => {
           {openMobNav && (
             <nav className="mobile-nav-links">
               {headerData.map((info) => (
-                <Link
-                  key={info.id}
-                  to={info.to}
-                  className={`link ${activeID === info.id ? "active" : ""}`}
-                >
-                  {info.text}
-                </Link>
+                <>
+                  {info.dropdown ? (
+                    <div>info.text</div>
+                  ) : (
+                    <Link
+                      key={info.id}
+                      to={info.to}
+                      className={`link ${activeID === info.id ? "active" : ""}`}
+                    >
+                      {info.text}
+                    </Link>
+                  )}
+                </>
               ))}
             </nav>
           )}
@@ -64,13 +71,21 @@ const Header = ({ activeID }) => {
 
         <nav className="nav-links desktop-nav  flex-container">
           {headerData.map((info) => (
-            <Link
-              key={info.id}
-              to={info.to}
-              className={`link ${activeID === info.id ? "active" : ""}`}
-            >
-              {info.text}
-            </Link>
+            <>
+              {info.dropdown ? (
+                <div className={`link ${activeID === info.id ? "active" : ""}`}>
+                  {info.text}
+                </div>
+              ) : (
+                <Link
+                  key={info.id}
+                  to={info.to}
+                  className={`link ${activeID === info.id ? "active" : ""}`}
+                >
+                  {info.text}
+                </Link>
+              )}
+            </>
           ))}
         </nav>
       </div>

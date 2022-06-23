@@ -45,6 +45,10 @@
     @media only screen and (max-width: $desktopSmall) {
       width: 10rem;
     }
+
+    @media only screen and (max-width: $mobileMedium) {
+      width: 7rem;
+    }
   }
 
   // .divider {
@@ -124,7 +128,7 @@
       background-color: rgba($color: $neutralBlack, $alpha: 0.85);
       right: 0;
       width: 100%;
-      top: 74px;
+      top: 95%;
       display: flex;
       flex-direction: column;
 

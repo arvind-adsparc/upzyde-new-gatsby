@@ -132,7 +132,8 @@
       display: flex;
       flex-direction: column;
 
-      a {
+      a,
+      .link {
         font-size: 0.8rem;
         padding: 1rem;
       }

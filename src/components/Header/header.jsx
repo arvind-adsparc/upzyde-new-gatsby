@@ -17,21 +17,19 @@ const Header = ({ activeID }) => {
     setVisible(flag);
   };
 
-  const menu = (
-    <Menu
-      items={[
-        {
-          label: <Link to="/in-game-ads/video">Display / Video </Link>,
-          key: "1",
-        },
-        {
-          label: <Link to="/404">Audio Ads </Link>,
+  const items = [
+    {
+      label: <Link to="/in-game-ads/video">Display / Video </Link>,
+      key: "1",
+    },
+    {
+      label: <Link to="/404">Audio Ads </Link>,
 
-          key: "2",
-        },
-      ]}
-    />
-  );
+      key: "2",
+    },
+  ];
+
+  const menu = <Menu items={items} />;
 
   return (
     <header className="page-header">
@@ -78,7 +76,11 @@ const Header = ({ activeID }) => {
               {headerData.map((info) => (
                 <>
                   {info.dropdown ? (
-                    <div>info.text</div>
+                    <div
+                      className={`link ${activeID === info.id ? "active" : ""}`}
+                    >
+                      {info.text}
+                    </div>
                   ) : (
                     <Link
                       key={info.id}

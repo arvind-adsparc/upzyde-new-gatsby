@@ -28,7 +28,7 @@ const IndexPage = () => {
       <AdvertisersAndDeveloers />
       <Ecosystem />
       <Partners heading="Strategic Partners" />
-      <RecentNews />
+      {/* <RecentNews /> */}
     </Layout>
   );
 };

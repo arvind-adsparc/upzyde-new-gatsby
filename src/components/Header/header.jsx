@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 
+import { DownOutlined } from "@ant-design/icons";
+import { Dropdown, Menu, Space } from "antd";
+
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 import headerData from "./data";
@@ -7,6 +10,28 @@ import "./header.scss";
 
 const Header = ({ activeID }) => {
   const [openMobNav, setOpenMobNav] = useState(false);
+
+  const [visible, setVisible] = useState(false);
+
+  const handleVisibleChange = (flag) => {
+    setVisible(flag);
+  };
+
+  const menu = (
+    <Menu
+      items={[
+        {
+          label: <Link to="/in-game-ads/video">Display / Video </Link>,
+          key: "1",
+        },
+        {
+          label: <Link to="/404">Audio Ads </Link>,
+
+          key: "2",
+        },
+      ]}
+    />
+  );
 
   return (
     <header className="page-header">
@@ -73,9 +98,19 @@ const Header = ({ activeID }) => {
           {headerData.map((info) => (
             <>
               {info.dropdown ? (
-                <div className={`link ${activeID === info.id ? "active" : ""}`}>
-                  {info.text}
-                </div>
+                <Dropdown
+                  overlay={menu}
+                  onVisibleChange={handleVisibleChange}
+                  visible={visible}
+                  className={`link ${activeID === info.id ? "active" : ""}`}
+                >
+                  <a onClick={(e) => e.preventDefault()}>
+                    <Space>
+                      {info.text}
+                      <DownOutlined />
+                    </Space>
+                  </a>
+                </Dropdown>
               ) : (
                 <Link
                   key={info.id}

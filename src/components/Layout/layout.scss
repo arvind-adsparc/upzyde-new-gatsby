@@ -46,6 +46,16 @@ input,
   font-size: 0.7rem;
 }
 
+.ant-dropdown-menu {
+  background-color: rgba($color: $primaryRed, $alpha: 0.7);
+
+  a {
+    color: $neutralWhite;
+    font-weight: 500;
+    font-size: 0.7rem;
+  }
+}
+
 // btn defaults
 
 .btn {

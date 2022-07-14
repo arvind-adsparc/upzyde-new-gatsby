@@ -13,6 +13,12 @@ const AdvertisersHero = () => {
           loading="eager"
         />
       </div>
+
+      <div className="content">
+        <h2>Gaming is the new </h2>
+        <h2>age source of Connection, </h2>
+        <h2> Engagement and Entertainment</h2>
+      </div>
     </section>
   );
 };

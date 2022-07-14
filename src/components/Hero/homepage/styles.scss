@@ -72,17 +72,24 @@
 
     background-color: rgba(38, 38, 38, 0.85);
     padding: 2rem;
+    width: 40%;
 
     @media only screen and (min-width: $desktopLarge) {
       padding: 3.5rem;
     }
 
+    @media only screen and (max-width: $desktopSmall) {
+      width: 50%;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      width: 55%;
+    }
+
     @media only screen and (max-width: $mobileMedium) {
-      // width: 90%;
       padding: 1.5rem;
       left: 0;
-
-      // right: 0;
+      width: 100%;
     }
 
     span {

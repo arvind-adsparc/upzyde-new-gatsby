@@ -15,9 +15,9 @@ const AdvertisersHero = () => {
       </div>
 
       <div className="content">
-        <h2>Gaming is the new </h2>
-        <h2>age source of Connection, </h2>
-        <h2> Engagement and Entertainment</h2>
+        <h2>Gaming is the new age source </h2>
+        <h2>of Connection, Engagement </h2>
+        <h2> and Entertainment</h2>
       </div>
     </section>
   );

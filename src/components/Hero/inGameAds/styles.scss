@@ -1,7 +1,7 @@
 @import "../../../styles//variables.scss";
 
 .videoAd-hero {
-  height: 70vh;
+  height: 80vh;
   width: 100%;
 
   position: relative;
@@ -20,39 +20,60 @@
   }
 
   .content {
-    color: $neutralWhite;
     position: absolute;
-    top: 30%;
-    left: 18%;
-    font-size: 1.5rem;
+    top: 35%;
+    left: 15%;
+    color: $neutralWhite;
+    text-transform: uppercase;
+    // width: 40%;
+
+    grid-column: 8 / 12;
+    grid-row: 5 / span 8;
+    z-index: 2;
 
     @media only screen and (min-width: $desktopLarge) {
-      left: 15%;
-    }
-    @media only screen and (max-width: $desktopSmall) {
-      font-size: 1.2rem;
-      left: 15%;
+      grid-column: 7 / 12;
     }
 
     @media only screen and (max-width: $mobile) {
-      font-size: 1rem;
-      line-height: 30px;
-      left: 10%;
+      grid-row: 4 / span 8;
+      grid-column: 8 / 12;
+    }
+
+    @media only screen and (max-width: $mobileMedium) {
+      grid-column: 7 / 12;
+    }
+
+    @media only screen and (max-width: $mobileSmall) {
+      grid-column: 7 / 12;
     }
 
     h2 {
-      font-size: 2rem;
+      margin: $margin1x 0;
+      font-size: 1.5rem;
+      background-image: linear-gradient(to right, $primaryRed, #601501);
+      // background-color: rgba(38, 38, 38, 0.85);
+      padding: 0.7rem;
+
+      width: fit-content;
 
       @media only screen and (min-width: $desktopLarge) {
-        font-size: 3.2rem;
+        font-size: 2.5rem;
+        padding: 2rem;
       }
 
+      @media only screen and (max-width: $desktopSmall) {
+        font-size: 1.2rem;
+      }
       @media only screen and (max-width: $mobile) {
-        font-size: 1.5rem;
+        font-size: 1rem;
       }
 
-      span {
-        display: block;
+      @media only screen and (max-width: $mobileMedium) {
+        font-size: 0.9rem;
+      }
+      @media only screen and (max-width: $mobileSmall) {
+        font-size: 0.7rem;
       }
     }
   }

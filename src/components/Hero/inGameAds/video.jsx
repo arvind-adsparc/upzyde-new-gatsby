@@ -15,10 +15,9 @@ const VideoAdHero = () => {
       </div>
 
       <div className="content">
-        <h2>
-          Engaging <span>ad experiences</span> <span>via in-game</span>{" "}
-          <span>display ads</span>{" "}
-        </h2>
+        <h2> Engaging AD </h2>
+        <h2>experiences via </h2>
+        <h2> in-game display ADs</h2>
       </div>
     </section>
   );

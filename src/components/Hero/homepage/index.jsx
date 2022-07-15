@@ -18,27 +18,29 @@ const HomeHero = () => {
       <div className="overlay"></div>
 
       <div className="content">
-        <h1>
-          Grab your gamers’ <span></span> attention, <span></span>
-          non-intrusively!
-        </h1>
+        <div className="inner-content">
+          <h1>
+            Grab your gamers’ <span></span> attention, <span></span>
+            non-intrusively!
+          </h1>
 
-        <p>
-          With Upzyde, experience one-of-a-kind tech involving dynamically
-          adaptive in-game ads for advertisers & app developers
-        </p>
+          <p>
+            With Upzyde, experience one-of-a-kind tech involving dynamically
+            adaptive in-game ads for advertisers & app developers
+          </p>
 
-        <div className="group">
-          <div className="cta">
-            <Link to="/advertisers">
-              <button className="btn">An Advertiser</button>
-            </Link>
-          </div>
+          <div className="group">
+            <div className="cta">
+              <Link to="/advertisers">
+                <button className="btn">An Advertiser</button>
+              </Link>
+            </div>
 
-          <div className="cta">
-            <Link to="/developers">
-              <button className="btn">A Game Developer</button>
-            </Link>
+            <div className="cta">
+              <Link to="/developers">
+                <button className="btn">A Game Developer</button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

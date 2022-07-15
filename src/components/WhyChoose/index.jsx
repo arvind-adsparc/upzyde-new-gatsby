@@ -103,6 +103,25 @@ const WhyChoose = () => {
               </div>
             </div>
           </div>
+
+          <div className="card">
+            <div className="card-img">
+              <StaticImage
+                src="https://res.cloudinary.com/dqove2qhg/image/upload/v1655095279/Upzyde/why_choose_upzyde_bg-icon-W-5_fwvjx8.webp"
+                alt=""
+                placeholder="none"
+                width={60}
+              />
+            </div>
+
+            <div className="card-txt">
+              <div className="txt-head">Multi-source Demand </div>
+              <div className="txt-para">
+                Demand integrations from direct advertisers, OpenRTB,
+                Programmatic PMP's and more
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

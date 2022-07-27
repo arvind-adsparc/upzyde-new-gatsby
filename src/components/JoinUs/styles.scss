@@ -1,0 +1,23 @@
+@import "../../styles/variables.scss";
+
+.why-joinus-container {
+  padding: $sectionSpacing 0;
+  text-align: center;
+  background-color: $neutralGray;
+
+  @media only screen and (max-width: $desktopSmall) {
+    padding: 2rem 0;
+  }
+
+  h2 {
+    font-size: $sectionTitle;
+    text-transform: uppercase;
+
+    @media only screen and (min-width: $desktopLarge) {
+      font-size: $sectionTitleBig;
+    }
+    @media only screen and (max-width: $mobile) {
+      font-size: $sectionTitleSmall;
+    }
+  }
+}

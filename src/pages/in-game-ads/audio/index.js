@@ -1,6 +1,7 @@
 import React from "react";
 import HelpingPublisher from "../../../components/HelpingPublishers";
 import AudioAdHero from "../../../components/Hero/inGameAds/audio";
+import JoinUs from "../../../components/JoinUs";
 import Layout from "../../../components/Layout/layout";
 import OtherPageOverview from "../../../components/Overview/OtherPageOverview/otherPageOverview";
 import Revenue from "../../../components/Revenue";
@@ -9,7 +10,6 @@ import Seo from "../../../components/Seo/seo";
 export const overviewData = {
   content:
     "<p>Reach a diverse and engaged audience with non-intrusive in-game audio ads. </p>",
-
   cta: {
     text: "Sounds Good",
     link: "",
@@ -27,6 +27,7 @@ const AudioAds = () => {
       <AudioAdHero />
       <OtherPageOverview {...overviewData} />
       <HelpingPublisher />
+      <JoinUs />
       <Revenue />
     </Layout>
   );

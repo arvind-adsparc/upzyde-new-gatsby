@@ -23,7 +23,7 @@ const Header = ({ activeID }) => {
       key: "1",
     },
     {
-      label: <Link to="/404">Audio Ads </Link>,
+      label: <Link to="/in-game-ads/audio">Audio Ads </Link>,
 
       key: "2",
     },

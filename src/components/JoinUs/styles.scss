@@ -45,7 +45,7 @@
     }
 
     .ant-tabs-tab-active {
-      background-color: rgba($color: $primaryRed, $alpha: 0.9);
+      background-color: #ef473e;
       // rgb(255 66 14 / 88%)
       border: none;
 
@@ -58,7 +58,7 @@
       }
     }
     .ant-tabs-content-holder {
-      background-color: $primaryRed;
+      background-color: #dd3a31;
       color: $neutralWhite;
       padding: 2rem;
       text-align: left;

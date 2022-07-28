@@ -19,11 +19,19 @@ const Header = ({ activeID }) => {
 
   const items = [
     {
-      label: <Link to="/in-game-ads/video">Display / Video </Link>,
+      label: (
+        <Link className="dropdown-link" to="/in-game-ads/video">
+          Display / Video{" "}
+        </Link>
+      ),
       key: "1",
     },
     {
-      label: <Link to="/in-game-ads/audio">Audio Ads </Link>,
+      label: (
+        <Link className="dropdown-link" to="/in-game-ads/audio">
+          Audio Ads{" "}
+        </Link>
+      ),
 
       key: "2",
     },
@@ -104,6 +112,9 @@ const Header = ({ activeID }) => {
                   overlay={menu}
                   onVisibleChange={handleVisibleChange}
                   visible={visible}
+                  // visible={true}
+                  placement="bottom"
+                  arrow
                   className={`link ${activeID === info.id ? "active" : ""}`}
                 >
                   <a onClick={(e) => e.preventDefault()}>

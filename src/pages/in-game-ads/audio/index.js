@@ -44,7 +44,10 @@ const AudioAds = () => {
       />
       <AudioAdHero />
       <OtherPageOverview {...overviewData} />
-      <HelpingPublisher publisherContent={publisherContent} background="blue" />
+      <HelpingPublisher
+        publisherContent={publisherContent}
+        background="#1995ad"
+      />
       <JoinUs />
       <Revenue />
     </Layout>

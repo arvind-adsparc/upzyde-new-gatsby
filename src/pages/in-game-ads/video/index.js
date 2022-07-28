@@ -49,7 +49,10 @@ const VideoAds = () => {
       />
       <VideoAdHero />
       <OtherPageOverview {...overviewData} />
-      <HelpingPublisher publisherContent={publisherContent} />
+      <HelpingPublisher
+        publisherContent={publisherContent}
+        sliderBg="https://res.cloudinary.com/dqove2qhg/image/upload/v1654583103/Upzyde/helping_publisher_blocks1_1_n815yw.webp"
+      />
       <Revenue />
     </Layout>
   );

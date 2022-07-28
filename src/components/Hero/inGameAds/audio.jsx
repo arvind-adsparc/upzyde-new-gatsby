@@ -6,7 +6,7 @@ const AudioAdHero = () => {
   return (
     <section className="videoAd-hero">
       <div className="hero-image">
-        <StaticImage
+        <img
           src="https://res.cloudinary.com/dqove2qhg/image/upload/v1658922581/Upzyde/banner_image_1_fg5elt.png"
           alt=""
           placeholder="none"

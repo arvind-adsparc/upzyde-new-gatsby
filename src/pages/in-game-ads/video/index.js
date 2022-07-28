@@ -16,6 +16,29 @@ export const overviewData = {
   },
 };
 
+const publisherContent = [
+  {
+    title: "Scalable Ad Solutions",
+    description:
+      " Our exemplary tools and strategies ensure your goals are accomplished. Be it revenue generation or user acquisition, our turn key solutions have the entire ad ecosystem covered.",
+  },
+  {
+    title: "Earn More With Your Games",
+    description:
+      "Upzyde’s monetization solutions help you make the most of your games and convert them into revenue-generating businesses. With innovative ad formats and advanced technology, we ensure you earn higher CPMs for your ad inventory.",
+  },
+  {
+    title: "Know Your User",
+    description:
+      "With real-time reporting and tracking the Upzyde dashboard enables publishers to deep-dive into analytics about user engagement, ad performance, and more. Know your user in detail and optimize your ads on the go to provide an unmatched gaming experience.",
+  },
+  {
+    title: "Ads For Everyone",
+    description:
+      " Not every game is the same, and not every user should see the same ad. Our innovative monetization strategies and diverse ad offerings help you choose ad types best suited to your playerbase.",
+  },
+];
+
 const VideoAds = () => {
   return (
     <Layout page="inGameAds">
@@ -26,7 +49,7 @@ const VideoAds = () => {
       />
       <VideoAdHero />
       <OtherPageOverview {...overviewData} />
-      <HelpingPublisher />
+      <HelpingPublisher publisherContent={publisherContent} />
       <Revenue />
     </Layout>
   );

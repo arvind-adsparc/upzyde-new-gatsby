@@ -16,6 +16,24 @@ export const overviewData = {
   },
 };
 
+const publisherContent = [
+  {
+    title: "Non-Intrusive Advertisements",
+    description:
+      "Deploy powerful yet non-intrusive audio advertisements for your players without hampering the gaming experience.",
+  },
+  {
+    title: "Increase Revenues",
+    description:
+      "Build a bigger and better audience while maximizing engagement and ad revenues with game-friendly audio ads",
+  },
+  {
+    title: "Limitless Reach",
+    description:
+      "Join Upzyde to connect with premium advertisers around the globe that pay top-of-the-market rates for your ad inventory.",
+  },
+];
+
 const AudioAds = () => {
   return (
     <Layout page="inGameAds">
@@ -26,7 +44,7 @@ const AudioAds = () => {
       />
       <AudioAdHero />
       <OtherPageOverview {...overviewData} />
-      <HelpingPublisher />
+      <HelpingPublisher publisherContent={publisherContent} background="blue" />
       <JoinUs />
       <Revenue />
     </Layout>

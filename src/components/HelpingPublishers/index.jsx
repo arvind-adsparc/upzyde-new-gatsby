@@ -4,7 +4,7 @@ import { Carousel } from "antd";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import "./styles.scss";
 
-const HelpingPublisher = () => {
+const HelpingPublisher = ({ publisherContent }) => {
   const slider = useRef(null);
 
   return (
@@ -74,43 +74,14 @@ const HelpingPublisher = () => {
 
         <div className="slider-mobile">
           <Carousel effect="fade" autoplay>
-            <div className="slider">
-              <div className="slider-title">Scalable Ad Solutions</div>
-              <div className="slider-description">
-                Our exemplary tools and strategies ensure your goals are
-                accomplished. Be it revenue generation or user acquisition, our
-                turnkey solutions have the entire ad ecosystem covered.
-              </div>
-            </div>
-            <div className="slider">
-              <div className="slider-title">Earn More With Your Games</div>
-              <div className="slider-description">
-                Upzyde’s monetization solutions help you make the most of your
-                games and convert them into revenue-generating businesses. With
-                innovative ad formats and advanced technology, we ensure you
-                earn higher CPMs for your ad inventory.
-              </div>
-            </div>
-
-            <div className="slider">
-              <div className="slider-title">Know Your User</div>
-              <div className="slider-description">
-                With real-time reporting and tracking the Upzyde dashboard
-                enables publishers to deep-dive into analytics about user
-                engagement, ad performance, and more. Know your user in detail
-                and optimize your ads on the go to provide an unmatched gaming
-                experience.
-              </div>
-            </div>
-            <div className="slider">
-              <div className="slider-title">Ads For Everyone</div>
-              <div className="slider-description">
-                Not every game is the same, and not every user should see the
-                same ad. Our innovative monetization strategies and diverse ad
-                offerings help you choose ad types best suited to your
-                playerbase.
-              </div>
-            </div>
+            {publisherContent.map((info) => {
+              return (
+                <div key={info.title} className="slider">
+                  <div className="slider-title">{info.title}</div>
+                  <div className="slider-description">{info.description}</div>
+                </div>
+              );
+            })}
           </Carousel>
         </div>
       </div>

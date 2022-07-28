@@ -44,7 +44,7 @@ const AudioAds = () => {
         description="With Upzyde’s comprehensive in-game monetization solutions, we help publishers grow revenues, without compromising on player experience. Work with numerous demand sources and ad networks across the world to maximize the value of every impression."
       />
       <AudioAdHero />
-      <OtherPageOverview {...overviewData} />
+      <OtherPageOverview {...overviewData} btnVariant="variant2" />
       <HelpingPublisher
         publisherContent={publisherContent}
         background="#1995ad"

@@ -2,7 +2,7 @@ import React from "react";
 import scrollFunction from "../../../utlis/scrollFunction";
 import "./styles.scss";
 
-const OtherPageOverview = ({ content, cta }) => {
+const OtherPageOverview = ({ content, cta, btnVariant }) => {
   return (
     <section className="overview-containerOther">
       <div className="inner-container">
@@ -14,7 +14,7 @@ const OtherPageOverview = ({ content, cta }) => {
         <div className="cta">
           <button
             onClick={() => scrollFunction(".request-demo")}
-            className="btn"
+            className={btnVariant ? `btn ${btnVariant}` : "btn"}
           >
             {cta.text}
           </button>

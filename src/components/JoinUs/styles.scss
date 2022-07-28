@@ -73,6 +73,12 @@
 
       h3 {
         color: $neutralWhite;
+        font-size: $default;
+        font-weight: $medium;
+      }
+
+      p {
+        font-size: 0.9rem;
       }
     }
   }

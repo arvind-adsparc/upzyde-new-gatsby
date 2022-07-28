@@ -1,4 +1,5 @@
 import React from "react";
+import GamerListen from "../../../components/GamerListen";
 import HelpingPublisher from "../../../components/HelpingPublishers";
 import AudioAdHero from "../../../components/Hero/inGameAds/audio";
 import JoinUs from "../../../components/JoinUs";
@@ -49,7 +50,7 @@ const AudioAds = () => {
         background="#1995ad"
       />
       <JoinUs />
-      <Revenue />
+      <GamerListen />
     </Layout>
   );
 };

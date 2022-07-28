@@ -1,0 +1,75 @@
+@import "../../styles/variables.scss";
+
+.gamer-listen {
+  padding: $sectionSpacing 0;
+  text-align: center;
+
+  @media only screen and (max-width: $desktopSmall) {
+    padding: 2rem 0;
+  }
+
+  .form-container {
+    margin: $margin3x 0;
+    position: relative;
+    color: $neutralWhite;
+    padding: 2rem;
+    background-image: url(https://res.cloudinary.com/dqove2qhg/image/upload/v1658922584/Upzyde/signupbg_ti4fxn.png);
+    // background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+
+    @media only screen and (min-width: $desktopLarge) {
+      padding: 3rem;
+    }
+
+    @media only screen and (max-width: $desktopSmall) {
+      background-size: 100% 100%;
+    }
+
+    @media only screen and (max-width: $mobileMedium) {
+      padding: 1.5rem;
+      margin: 1rem 0;
+    }
+
+    .form-content {
+      //   position: absolute;
+      padding: 2rem 4rem;
+
+      h2 {
+        font-size: $sectionTitle;
+        @media only screen and (min-width: $desktopLarge) {
+          font-size: 2rem;
+        }
+
+        @media only screen and (max-width: $desktopSmall) {
+          font-size: 1.3rem;
+        }
+
+        @media only screen and (max-width: $mobile) {
+          font-size: 1.1rem;
+          line-height: 25px;
+        }
+
+        .sentence-break {
+          display: block;
+
+          @media only screen and (max-width: $mobileMedium) {
+            display: inline;
+          }
+        }
+      }
+
+      .cta {
+        color: black;
+        .btn {
+          @media only screen and (max-width: $desktopSmall) {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}

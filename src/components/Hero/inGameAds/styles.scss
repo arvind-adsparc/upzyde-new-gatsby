@@ -9,10 +9,19 @@
     height: 50vh;
   }
   .hero-image {
+    background-image: url(https://res.cloudinary.com/dqove2qhg/image/upload/v1658922581/Upzyde/banner_image_1_fg5elt.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
     grid-column: 1 / span 12;
     grid-row: 1 / span 12;
     height: 100%;
     width: 100%;
+
+    @media only screen and (max-width: $mobile) {
+      background-position: 80%;
+    }
     .gatsby-image-wrapper {
       height: 100%;
       width: 100%;

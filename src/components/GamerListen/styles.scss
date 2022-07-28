@@ -14,12 +14,15 @@
     color: $neutralWhite;
     padding: 2rem;
     background-image: url(https://res.cloudinary.com/dqove2qhg/image/upload/v1658922584/Upzyde/signupbg_ti4fxn.png);
-    // background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
+
+    @media only screen and (min-width: $desktopLarge) {
+      width: 70%;
+      margin-right: auto;
+      margin-left: auto;
+      background-size: 100% 100%;
+    }
 
     @media only screen and (min-width: $desktopLarge) {
       padding: 3rem;

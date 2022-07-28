@@ -53,22 +53,6 @@
     }
   }
 
-  // .divider {
-  //   width: 15%;
-
-  //   @media only screen and (min-width: $desktopLarge) {
-  //     width: 10%;
-  //   }
-
-  //   @media only screen and (max-width: $desktopSmall) {
-  //     width: 5%;
-  //   }
-
-  //   @media only screen and (max-width: $mobile) {
-  //     display: none;
-  //   }
-  // }
-
   .nav-links {
     // width: 55%;
     // flex: 1;
@@ -83,6 +67,7 @@
       padding: 0.3rem 1rem;
       font-size: 0.8rem;
       font-weight: $regular;
+      margin: 0 1rem;
 
       @media only screen and (min-width: $desktopLarge) {
         font-size: 1.2rem;
@@ -127,7 +112,8 @@
 
     .mobile-nav-links {
       position: absolute;
-      background-color: rgba($color: $neutralBlack, $alpha: 0.85);
+      // background-color: rgba($color: $neutralBlack, $alpha: 0.85);
+      background-color: black;
       right: 0;
       width: 100%;
       top: 95%;

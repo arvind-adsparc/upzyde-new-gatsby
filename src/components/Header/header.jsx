@@ -84,11 +84,15 @@ const Header = ({ activeID }) => {
               {headerData.map((info) => (
                 <>
                   {info.dropdown ? (
-                    <div
-                      className={`link ${activeID === info.id ? "active" : ""}`}
-                    >
-                      {info.text}
-                    </div>
+                    <>
+                      <Link className="dropdown-link" to="/in-game-ads/video">
+                        Display / Video{" "}
+                      </Link>
+
+                      <Link className="dropdown-link" to="/in-game-ads/audio">
+                        Audio Ads{" "}
+                      </Link>
+                    </>
                   ) : (
                     <Link
                       key={info.id}

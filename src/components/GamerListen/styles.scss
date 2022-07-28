@@ -38,6 +38,10 @@
       //   position: absolute;
       padding: 2rem 4rem;
 
+      @media only screen and (max-width: $mobileMedium) {
+        padding: 2rem;
+      }
+
       h2 {
         font-size: $sectionTitle;
         @media only screen and (min-width: $desktopLarge) {
@@ -49,6 +53,7 @@
         }
 
         @media only screen and (max-width: $mobile) {
+          margin-bottom: 1rem;
           font-size: 1.1rem;
           line-height: 25px;
         }

@@ -54,7 +54,10 @@ const HelpingPublisher = ({ publisherContent, background }) => {
           <Carousel effect="fade" autoplay>
             {publisherContent.map((info) => {
               return (
-                <div key={info.title} className="slider">
+                <div
+                  key={info.title}
+                  className={background ? "slider blueBG" : "slider"}
+                >
                   <div className="slider-title">{info.title}</div>
                   <div className="slider-description">{info.description}</div>
                 </div>

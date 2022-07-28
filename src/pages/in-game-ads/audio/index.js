@@ -9,7 +9,7 @@ import Seo from "../../../components/Seo/seo";
 
 export const overviewData = {
   content:
-    "<p>Reach a diverse and engaged audience with non-intrusive in-game audio ads. </p>",
+    "<p>Reach a diverse and engaged audience with <span class='line-break'></span> non-intrusive in-game audio ads. </p>",
   cta: {
     text: "Sounds Good",
     link: "",

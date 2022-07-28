@@ -29,6 +29,10 @@
 
     p {
       margin-bottom: $margin1halfx;
+
+      .line-break {
+        display: block;
+      }
     }
   }
 

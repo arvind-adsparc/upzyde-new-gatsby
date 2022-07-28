@@ -25,20 +25,28 @@
     padding: 3rem 0;
 
     .ant-tabs-nav {
-      //   margin: 0;
+      margin: 0;
+      // display: none;
+
+      &::before {
+        border-bottom: transparent;
+      }
     }
     .ant-tabs-tab {
-      border-radius: 10px;
       background-color: #ddd;
       padding: 0.5rem 1.5rem;
       color: black;
-      font-weight: bold;
+      font-weight: $medium;
       font-family: $primaryType;
       margin: 0;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      z-index: 2;
     }
 
     .ant-tabs-tab-active {
-      background-color: $primaryRed;
+      background-color: rgba($color: $primaryRed, $alpha: 0.9);
+      // rgb(255 66 14 / 88%)
       border: none;
 
       button {
@@ -54,7 +62,10 @@
       color: $neutralWhite;
       padding: 2rem;
       text-align: left;
-      border-radius: 10px;
+      // margin-top: -10px;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
 
       h3 {
         color: $neutralWhite;

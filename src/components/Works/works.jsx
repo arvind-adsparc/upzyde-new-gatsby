@@ -10,8 +10,9 @@ const Works = () => {
       <h2>Here’s How it Works</h2>
 
       <div className="content">
-        <StaticImage
-          src="https://res.cloudinary.com/dqove2qhg/image/upload/v1654147756/Upzyde/video_dummy-1_1_wvvxjf.webp"
+        <img
+          // src="https://res.cloudinary.com/dqove2qhg/image/upload/v1655709768/Upzyde/ecosystem_sqbazq.webp"
+          src="https://res.cloudinary.com/dqove2qhg/image/upload/v1659607077/Upzyde/Eco_system-1_rrbbtq.webp"
           alt="videp"
           title="video"
           placeholder="none"

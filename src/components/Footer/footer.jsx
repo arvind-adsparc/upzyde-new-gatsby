@@ -1,5 +1,6 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
+import { Link } from "gatsby";
 import Newsletter from "../Forms/newsletter";
 
 import "./footer.scss";
@@ -81,16 +82,38 @@ const Footer = ({ page }) => {
 
             <div className="link-group">
               <div>
-                <div className="link">Advertiser T&C</div>
-                <div className="link">Brand Safety</div>
-                <div className="link">Publisher T&C</div>
-                <div className="link">Publisher Guidelines</div>
+                <div>
+                  <Link className="link" to="/">
+                    Home
+                  </Link>
+                </div>
+                <div>
+                  <Link className="link" to="/developers">
+                    Developers
+                  </Link>
+                </div>
+                <div>
+                  <Link className="link" to="/advertisers">
+                    Advertisers
+                  </Link>
+                </div>
               </div>
               <div>
-                <div className="link">Privacy Policy</div>
-                <div className="link">Privacy Options</div>
-                <div className="link">Cookie Policy</div>
-                <div className="link">Contact</div>
+                <div>
+                  <Link className="link" to="/in-game-ads/video">
+                    Video Ads
+                  </Link>
+                </div>
+                <div>
+                  <Link className="link" to="/in-game-ads/audio">
+                    Audio Ads
+                  </Link>
+                </div>
+                <div>
+                  <Link className="link" to="/contact-us">
+                    Contact
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
